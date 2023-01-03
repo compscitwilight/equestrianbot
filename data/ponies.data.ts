@@ -45,6 +45,7 @@ var Ponies: Pony[] = [
     {
         honorificPrefix: "Princess",
         name: "Twilight Sparkle",
+        image: "https://upload.wikimedia.org/wikipedia/en/b/b4/PrincessTwilightSparkle.png",
         description: `
         Princess **Twilight Sparkle** is an Alicorn who resides in Ponyville. She is the Princess of Friendship (Season 4-9), and became the Ruler of Equestria in "The Last Problem".
         She is depicted as a studious pony who loves magic. Her cutie mark resembles Magic, and her Element of Harmony also resembles Magic.
