@@ -17,7 +17,7 @@ export default {
         const choices = Ponies.map((pony) => {
             return pony.name;
         });
-        console.log(choices);
+        choices.length = 25; // cap
         const filtered = choices.filter((choice) => {
             return choice.toLowerCase().startsWith(val.value.toLowerCase());
         });
