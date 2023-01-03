@@ -14,6 +14,7 @@ export default {
     execute: async (interaction: Interaction) => {
         if (interaction.isAutocomplete()) {
             const val = interaction.options.getFocused();
+            console.log(val);
             const choices = Ponies.map((pony) => {
                 return pony.name;
             });
