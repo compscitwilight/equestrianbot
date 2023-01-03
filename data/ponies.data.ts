@@ -113,6 +113,30 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.Orange
+    },
+    {
+        name: "Princess Celestia",
+        image: "https://static.wikia.nocookie.net/mlp/images/2/2a/Princess_Celestia_ID_S4E01.png/revision/latest?cb=20140322224921",
+        description: `
+        **Princess Celestia** is one of the regal sisters of Equestria. Alongside her sister Princess Luna, she is in charge of rising the sun, maintaining peace in Equestria,
+        and mentoring Twilight Sparkle. She is one of the most famous ponies in all of Equestrian history. She and her sister defeated Discord using the Elements of Harmony
+        when he first gained control of Equestria.
+        `,
+        gen: Generation.G4,
+        type: Species.Alicorn,
+        color: Colors.Yellow
+    },
+    {
+        name: "Princess Luna",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/18/Princess_Luna_ID_S5E04.png/revision/latest?cb=20150422172452",
+        description: `
+        **Princess Luna** is one of the regal sisters of Equestria. Alongside her sister Princess Celestia, she is in charge of rising the moon, and helping ponies in their dreams.
+        Princess Luna was banished to the moon after turning into **Nightmare Moon* over 1,000 years ago by her sister using the Elements of Harmony. Nightmare Moon was defeated in
+        the My Little Pony: Friendship is Magic premiere by the Mane 6.
+        `,
+        gen: Generation.G4,
+        type: Species.Alicorn,
+        color: Colors.DarkPurple
     }
 ]
 
