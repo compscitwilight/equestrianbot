@@ -281,6 +281,18 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Yak,
         color: Colors.LuminousVividPink
+    },
+    {
+        name: "Derpy",
+        image: "https://static.wikia.nocookie.net/mlp/images/0/05/Derpy_ID_S4E10.png/revision/latest?cb=20140131033149",
+        description: `
+        **Derpy** (or **Derpy Hooves**, **Ditzy Doo**, **Muffins**) is a mail pegasus. She is characterized by her strabismus, causing both of her eyes to look in opposite
+        directions. She was formerly a background character in the Premiere, but fans discovered her quirk on 4chan. This lead to her becoming an official, but controversial character.
+        She is one of the most iconic characters in Gen 4.
+        `,
+        gen: Generation.G4,
+        type: Species.Pegasus,
+        color: Colors.LightGrey
     }
 ]
 
