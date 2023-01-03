@@ -18,6 +18,7 @@ export enum Generation {
     G2 = "G2",
     G3 = "G3",
     G4 = "G4",
+    EQG = "G4.5 (Equestria Girls)",
     G5 = "G5"
 }
 
