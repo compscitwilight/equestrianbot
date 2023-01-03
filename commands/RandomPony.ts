@@ -1,6 +1,7 @@
-import { SlashCommandBuilder, Interaction, Colors } from "discord.js";
+import { SlashCommandBuilder, Interaction } from "discord.js";
 import { CreatePonyEmbed } from "../embeds/Pony";
 import { Ponies } from "../data/ponies.data";
+import Command from "../Command";
 
 export default {
     data: new SlashCommandBuilder()
@@ -17,4 +18,4 @@ export default {
             embeds: [embed]
         });
     }
-}
+} as Command;
