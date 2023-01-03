@@ -80,6 +80,39 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Pegasus,
         color: Colors.Yellow
+    },
+    {
+        name: "Rainbow Dash",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/60/Rainbow_Dash_ID_T3E7.png/revision/latest?cb=20150302214756&path-prefix=es",
+        description: `
+        **Rainbow Dash** is a blue pegasus who represents the Element of Loyalty. She is a member of the Mane 6, and the Wonderbolts. She is an egotistical, competitve,
+        and loyal pegasus, and even has her own fanclub ran by Scootaloo. She is one of the most iconic pegasi in My Little Pony.
+        `,
+        gen: Generation.G4,
+        type: Species.Pegasus,
+        color: Colors.Blue
+    },
+    {
+        name: "Rarity",
+        image: "https://i.pinimg.com/736x/70/3b/be/703bbe46a2fdea09f5f949d25f6c9001--pony-style-girly-stuff.jpg",
+        description: `
+        **Rarity** is a unicorn who represents the Element of Generosity. She is part of the Mane 6 and is portrayed as an overdramatic fashionista. She owns a boutique
+        in Canterlot, and is famous across Equestria for her fashion.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.White
+    },
+    {
+        name: "Applejack",
+        image: "https://1.bp.blogspot.com/-1gaCoMUcaGU/XoJHyMI9zSI/AAAAAAADVaM/mPQrY7r35O4_6WkHRAbTm4aLmjrSlsVSwCLcBGAsYHQ/s1600/large.png",
+        description: `
+        **Applejack** is an Earth pony who represents the Element of Honesty. She is a member of the Mane 6, and the Apple Family. She works on Sweet Apple Acres with her younger sister
+        Applebloom, her older brother Big Mac, and her grandmother Granny Smith. She is portrayed as a wise cowgirl.
+        `,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
     }
 ]
 
