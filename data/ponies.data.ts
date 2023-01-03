@@ -47,7 +47,7 @@ export enum Species {
 }
 
 export function getPony(name: string) {
-    return Ponies.find((pony) => pony.name == name);
+    return Ponies.find((pony) => pony.name.toLowerCase() == name.toLowerCase());
 }
 
 var Ponies: Pony[] = [
