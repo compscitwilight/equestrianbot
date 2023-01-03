@@ -366,6 +366,16 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Unicorn,
         color: Colors.Blue
+    },
+    {
+        name: "Prince Bluebird",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/b9/Prince_Blueblood_ID_S1E03.png/revision/latest?cb=20110510223111",
+        description: `
+        **Prince Bluebird** is a royal unicorn who is the distant nephew of Princess Celestia and Princess Luna, and the cousin of Princess Cadance.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.Yellow
     }
 ]
 
