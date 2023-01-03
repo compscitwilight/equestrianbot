@@ -18,7 +18,10 @@ export default {
             return pony.name;
         });
         console.log(choices);
-        const filtered = choices.filter((choice) => choice.startsWith(val.value));
+        const filtered = choices.filter((choice) => {
+            choice.toLowerCase().startsWith(val.value.toLowerCase());
+        });
+        console.log(filtered);
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
     execute: (interaction: Interaction) => {
