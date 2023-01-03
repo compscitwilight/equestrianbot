@@ -187,7 +187,7 @@ var Ponies: Pony[] = [
         image: "https://static.wikia.nocookie.net/heroes-and-villain/images/d/dd/Discord.png/revision/latest?cb=20190325155926",
         description: `
         **Discord** is a draconequus who formerly used his magic to convert Equestria into the "Chaos Capital of the World". He was turned to stone by the regal sisters
-        over 1,000 years ago, but came back after the Cutie Mark Crusaders has an argument near his statue. Afterwards, the Mane 6 defeated him with the Elements of Harmony,
+        over 1,000 years ago, but came back after the Cutie Mark Crusaders had an argument near his statue. Afterwards, the Mane 6 defeated him with the Elements of Harmony,
         and in "Keep Calm and Flutter On", Discord was reformed by Fluttershy.
 
         He is the only creature in Equestria to hold "chaos magic".
