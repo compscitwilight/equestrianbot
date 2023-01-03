@@ -227,6 +227,39 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Pegasus,
         color: Colors.Orange
+    },
+    {
+        name: "Babs Seed",
+        image: "https://static.wikia.nocookie.net/mlp/images/c/c0/Babs_Seed_ID_MLP_Facebook.png/revision/latest?cb=20190906111222",
+        description: `
+        **Babs Seed** is a school-age earth pony who is a former member of the **Cutie Mark Crusaders**, and the cousin of Applebloom. She became a bully when she
+        visited Ponyville, but changed herself after the Cutie Mark Crusaders saved her from crashing her float into mud.
+        `,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkOrange
+    },
+    {
+        name: "Trixie Lulamoon",
+        image: "https://pbs.twimg.com/media/DXtMPaIXUAEJ1xw.jpg",
+        description: `
+        "The Great and Powerful" **Trixie Lulamoon** is a unicorn who performs magic tricks across Equestria. She is friends with Starlight Glimmer, who is Princess Twilight Sparkle's
+        student.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.DarkPurple
+    },
+    {
+        name: "Starlight Glimmer",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/de/Starlight_Glimmer_ID_S6E2.png/revision/latest?cb=20160328141719",
+        description: `
+        **Starlight Glimmer** is a unicorn who is the student of Princess Twilight Sparkle. She is a former villian who lead a village where she removed the cutie marks of ponies who visited,
+        and even time travelled to try and stop Rainbow Dash from performing her Sonic Rainboom which gave the rest of the Mane 6 their cutie marks.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.Purple
     }
 ]
 
