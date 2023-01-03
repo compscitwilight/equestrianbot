@@ -137,6 +137,28 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Alicorn,
         color: Colors.DarkPurple
+    },
+    {
+        name: "Princess Cadance",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/6f/Princess_Cadance_ID_S4E11.png/revision/latest/scale-to-width-down/225?cb=20140128163901",
+        description: `
+        **Princess Cadance** is an Alicorn who is the Princess of the Crystal Empire, alongside Prince Shining Armor. She is the former foal-sitter of Princess Twilight Sparkle,
+        the wife of her brother, and her sister-in-law. She is in charge of maintaining the defense of the Crystal Empire by using her magic.
+        `,
+        gen: Generation.G4,
+        type: Species.Alicorn,
+        color: Colors.DarkVividPink
+    },
+    {
+        name: "Prince Shining Armor",
+        image: "https://i.pinimg.com/originals/80/1a/07/801a077b078ec2a29f19b3e0d6565c8d.png",
+        description: `
+        **Prince Shining Armor** is a unicorn who is the older brother of Princess Twilight Sparkle, and the wife of Princess Cadance. He, alongside Princess Cadance rule the
+        Crystal Empire and protect it with their magic.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.DarkBlue
     }
 ]
 
