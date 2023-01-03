@@ -29,23 +29,25 @@ client.on("ready", async () => {
 })
 
 client.on("interactionCreate", async (interaction: Interaction) => {
-    if (!interaction.isChatInputCommand()) return;
-    let command = commands.find((c: Command) => {
-        return c.data.name == interaction.commandName;
-    });
-    if (!command) {
-        console.warn(`Command ${interaction.commandName} was not initialized.`);
-        return
-    };
-
-    try {
-        await (command as Command).execute(interaction);
-    } catch (error) {
-        console.error(error);
-        await interaction.reply({
-            content: "An error occured within the bot.",
-            ephemeral: true
+    if (interaction.isChatInputCommand()) {
+        let command = commands.find((c: Command) => {
+            return c.data.name == interaction.commandName;
         });
+
+        await (command as Command).execute(interaction);
+        return;
+    }
+
+    if (interaction.isAutocomplete()) {
+        let command = commands.find((c: Command) => {
+            return c.data.name == interaction.commandName;
+        });
+
+        let cmd = (command as Command);
+        if (!cmd.autocomplete) return;
+        
+        await cmd.autocomplete(interaction);
+        return;
     }
 })
 
