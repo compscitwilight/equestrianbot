@@ -63,10 +63,23 @@ var Ponies: Pony[] = [
         name: "Pinkie Pie",
         image: "https://static.wikia.nocookie.net/mlp/images/b/b2/Pinkie_Pie_ID_S4E11.png/revision/latest?cb=20190410214815",
         description: `
-        **Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties.`,
+        **Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties.
+        `,
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.LuminousVividPink
+    },
+    {
+        name: "Fluttershy",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/d6/Fluttershy_ID_S1E17.png/revision/latest?cb=20190410214903",
+        description: `
+        **Fluttershy** is a yellow pegasus who represents the Element of Kindness. She is part of the Mane 6 and is usually portrayed as a shy and introverted
+        pony. She has a special ability to communicate with other animals, and reformed Discord in "Keep Calm and Flutter On". She has the ability to do "the Stare",
+        which allows her to intimidate animals.
+        `,
+        gen: Generation.G4,
+        type: Species.Pegasus,
+        color: Colors.Yellow
     }
 ]
 
