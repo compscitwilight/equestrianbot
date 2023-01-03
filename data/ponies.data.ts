@@ -58,6 +58,15 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Alicorn,
         color: Colors.Purple
+    },
+    {
+        name: "Pinkie Pie",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/b2/Pinkie_Pie_ID_S4E11.png/revision/latest?cb=20190410214815",
+        description: `
+        **Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties.`,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LuminousVividPink
     }
 ]
 
