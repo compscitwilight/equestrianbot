@@ -1,4 +1,4 @@
-import { Client, Collection, Interaction, REST, Routes } from "discord.js";
+import { Client, ActivityType, Interaction, REST, Routes } from "discord.js";
 import { readdirSync } from "fs";
 import Command from "./Command";
 import Config from "./config.json";
@@ -11,6 +11,20 @@ let client = new Client({
 for (const cmd of readdirSync("./commands")) {
     let data: Command = require("./commands/" + cmd).default;
     commands.push(data);
+}
+
+function updateStatusCount() {
+    let totalMemberCount = 0;
+    let guilds = client.guilds.cache
+    for (var i = 0; i < guilds.size; i++) {
+        let guild = guilds.at(i);
+        totalMemberCount += guild.memberCount;
+    }
+
+    client.user.setActivity({
+        type: ActivityType.Watching,
+        name: `${guilds.size} servers and ${totalMemberCount} ponies across Equestria!`
+    })
 }
 
 client.on("ready", async () => {
@@ -45,10 +59,13 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 
         let cmd = (command as Command);
         if (!cmd.autocomplete) return;
-        
+
         await cmd.autocomplete(interaction);
         return;
     }
 })
+
+client.on("guildCreate", () => updateStatusCount());
+client.on("guildDelete", () => updateStatusCount());
 
 client.login(Config.token);
