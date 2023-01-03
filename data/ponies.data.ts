@@ -40,7 +40,8 @@ export enum Species {
     Phoenix = "Phoenix",
     Siren = "Siren",
     Tantabus = "Tantabus",
-    Yak = "Yak"
+    Yak = "Yak",
+    Zebra = "Zebra"
 }
 
 export function getPony(name: string) {
@@ -293,6 +294,16 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Pegasus,
         color: Colors.LightGrey
+    },
+    {
+        name: "Zecora",
+        image: "https://static.wikia.nocookie.net/mlp/images/e/e2/Zecora_id.png/revision/latest?cb=20111117100832",
+        description: `
+        **Zecora** is a zebra who brews potions using herbs from the Everfree Forest. She is a supporting character who helps find cures to certain diseases.
+        `,
+        gen: Generation.G4,
+        type: Species.Zebra,
+        color: Colors.White
     }
 ]
 
