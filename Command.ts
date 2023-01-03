@@ -1,6 +1,6 @@
-import { SlashCommandBuilder, Interaction } from "discord.js";
+import { SlashCommandBuilder, Interaction, AutocompleteInteraction, SlashCommandStringOption } from "discord.js";
 export default interface Command {
     data: SlashCommandBuilder,
-    autocomplete: (interaction: Interaction) => any,
+    autocomplete: (interaction: AutocompleteInteraction) => any,
     execute: (interaction: Interaction) => any
 }

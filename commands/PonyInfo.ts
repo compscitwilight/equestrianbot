@@ -1,4 +1,4 @@
-import { Interaction, SlashCommandBuilder, SlashCommandStringOption } from "discord.js";
+import { AutocompleteInteraction, Interaction, SlashCommandBuilder, SlashCommandStringOption } from "discord.js";
 import Command from "../Command"
 import { Ponies } from "../data/ponies.data";
 
@@ -11,15 +11,17 @@ export default {
                 .setDescription("The pony that you want information about.")
                 .setAutocomplete(true)
         ),
-    execute: async (interaction: Interaction) => {
-        if (interaction.isAutocomplete()) {
-            const val = interaction.options.getFocused(true);
-            console.log(val);
-            const choices = Ponies.map((pony) => {
-                return pony.name;
-            });
-            const filtered = choices.filter((choice) => choice.startsWith(val.value));
-            await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
-        }
+    autocomplete: async (interaction: AutocompleteInteraction) => {
+        const val = interaction.options.getFocused(true);
+        console.log(val);
+        const choices = Ponies.map((pony) => {
+            return pony.name;
+        });
+        const filtered = choices.filter((choice) => choice.startsWith(val.value));
+        await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
+    },
+    execute: (interaction: Interaction) => {
+        if (!interaction.isRepliable()) return;
+        interaction.reply("Hi");
     }
 } as Command;
