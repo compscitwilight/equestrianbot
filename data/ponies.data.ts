@@ -261,6 +261,26 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Unicorn,
         color: Colors.Purple
+    },
+    {
+        name: "Prince Rutherford",
+        image: "https://static.wikia.nocookie.net/mlp/images/3/3e/Prince_Rutherford_ID_S5E11.png/revision/latest?cb=20150630030726",
+        description: `
+        **Prince Rutherford** is a yak who is the leader of Yakyakistan. He is friends with Pinkie Pie, who is the "Official Friendship Ambassador for the Yaks".
+        `,
+        gen: Generation.G4,
+        type: Species.Yak,
+        color: Colors.DarkOrange
+    },
+    {
+        name: "Yona",
+        image: "https://static.wikia.nocookie.net/mlp/images/2/22/Yona_ID_S8E2.png/revision/latest?cb=20180329000918",
+        description: `
+        **Yona** is a female yak who is a student at Twilight's School of Friendship. She is part of the Young 6, which is a friend group of students at the school.
+        `,
+        gen: Generation.G4,
+        type: Species.Yak,
+        color: Colors.LuminousVividPink
     }
 ]
 
