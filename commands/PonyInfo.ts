@@ -19,7 +19,7 @@ export default {
         });
         choices.length = 25; // cap
         const filtered = choices.filter((choice) => {
-            return choice.toLowerCase().startsWith(val.value.toLowerCase());
+            return choice.toLowerCase().includes(val.value.toLowerCase());
         });
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
