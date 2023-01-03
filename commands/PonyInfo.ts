@@ -14,15 +14,12 @@ export default {
         ),
     autocomplete: async (interaction: AutocompleteInteraction) => {
         const val = interaction.options.getFocused(true);
-        console.log(val);
         const choices = Ponies.map((pony) => {
             return pony.name;
         });
-        console.log(choices);
         const filtered = choices.filter((choice) => {
             return choice.toLowerCase().startsWith(val.value.toLowerCase());
         });
-        console.log(filtered);
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
     execute: (interaction: Interaction) => {
