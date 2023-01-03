@@ -14,12 +14,12 @@ export interface Pony {
 }
 
 export enum Generation {
-    G1 = "G1",
-    G2 = "G2",
-    G3 = "G3",
-    G4 = "G4",
-    EQG = "G4.5 (Equestria Girls)",
-    G5 = "G5"
+    G1 = "Generation 1",
+    G2 = "Generation 2",
+    G3 = "Generation 3",
+    G4 = "Generation 4",
+    EQG = "Equestria Girls",
+    G5 = "Generation 5"
 }
 
 export enum Species {
