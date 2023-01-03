@@ -17,6 +17,7 @@ export default {
         const choices = Ponies.map((pony) => {
             return pony.name;
         });
+        console.log(choices);
         const filtered = choices.filter((choice) => choice.startsWith(val.value));
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
