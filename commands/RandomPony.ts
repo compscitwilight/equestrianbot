@@ -10,16 +10,7 @@ export default {
         if (!interaction.isRepliable()) return;
         let index = Math.floor(Math.random() * Ponies.length);
         let pony = Ponies[index];
-        let embed = CreatePonyEmbed(
-            pony.name,
-            pony.description
-        )
-
-        if (pony.image)
-            embed.setImage(pony.image);
-
-        if (pony.color)
-            embed.setColor(pony.color);
+        let embed = CreatePonyEmbed(pony);
 
         interaction.reply({
             content: "🎲 RandomPony!",
