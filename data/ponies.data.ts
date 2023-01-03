@@ -41,7 +41,9 @@ export enum Species {
     Siren = "Siren",
     Tantabus = "Tantabus",
     Yak = "Yak",
-    Zebra = "Zebra"
+    Zebra = "Zebra",
+    Alligator = "Alligator",
+    Bunny = "Bunny"
 }
 
 export function getPony(name: string) {
@@ -324,6 +326,26 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.Orange
+    },
+    {
+        name: "Gummy",
+        image: "https://static.wikia.nocookie.net/mlp/images/5/5c/Gummy_bathroom_floor_S1E15.png/revision/latest?cb=20110809133006",
+        description: `
+        **Gummy** is Pinkie Pie's pet alligator.
+        `,
+        gen: Generation.G4,
+        type: Species.Alligator,
+        color: Colors.Green
+    },
+    {
+        name: "Angel",
+        image: "https://static.wikia.nocookie.net/mlp/images/3/3f/Angel_ID_S3E10.png/revision/latest?cb=20160727001840",
+        description: `
+        **Angel** is a Fluttershy's pet bunny. He is a sassy and demanding bunny who acts as the primary companion of Fluttershy.
+        `,
+        gen: Generation.G4,
+        type: Species.Bunny,
+        color: Colors.White
     }
 ]
 
