@@ -1,6 +1,7 @@
 import { AutocompleteInteraction, Interaction, SlashCommandBuilder, SlashCommandStringOption } from "discord.js";
 import Command from "../Command"
-import { Ponies } from "../data/ponies.data";
+import { getPony, Ponies } from "../data/ponies.data";
+import { CreatePonyEmbed } from "../embeds/Pony";
 
 export default {
     data: new SlashCommandBuilder()
@@ -26,6 +27,16 @@ export default {
     },
     execute: (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
-        interaction.reply("Hi");
+        let options = ((interaction as unknown) as AutocompleteInteraction).options;
+        let arg = options.getString("pony", true);
+        if (!arg) return;
+
+        let pony = getPony(arg);
+        if (!pony) return;
+
+        let embed = CreatePonyEmbed(pony);
+        interaction.reply({
+            embeds: [embed]
+        })
     }
 } as Command;
