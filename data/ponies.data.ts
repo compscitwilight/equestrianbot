@@ -131,7 +131,7 @@ var Ponies: Pony[] = [
         image: "https://static.wikia.nocookie.net/mlp/images/1/18/Princess_Luna_ID_S5E04.png/revision/latest?cb=20150422172452",
         description: `
         **Princess Luna** is one of the regal sisters of Equestria. Alongside her sister Princess Celestia, she is in charge of rising the moon, and helping ponies in their dreams.
-        Princess Luna was banished to the moon after turning into **Nightmare Moon* over 1,000 years ago by her sister using the Elements of Harmony. Nightmare Moon was defeated in
+        Princess Luna was banished to the moon after turning into **Nightmare Moon** over 1,000 years ago by her sister using the Elements of Harmony. Nightmare Moon was defeated in
         the My Little Pony: Friendship is Magic premiere by the Mane 6.
         `,
         gen: Generation.G4,
