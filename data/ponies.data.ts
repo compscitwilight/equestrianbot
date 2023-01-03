@@ -346,6 +346,26 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Bunny,
         color: Colors.White
+    },
+    {
+        name: "Bon Bom",
+        image: "https://static.wikia.nocookie.net/mlp/images/2/21/Sweetie_Drops_ID_S5E9.png/revision/latest?cb=20151027051023",
+        description: `
+        **Bon Bon** (officially known as **Sweetie Drops**) is an occurring background character who is usually alongside her wife Lyra Heartstrings
+        `,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkGold
+    },
+    {
+        name: "Lyra Heartstrings",
+        image: "https://static.wikia.nocookie.net/mlp/images/0/0f/Lyra_Heartstrings_ID_S5E9.png/revision/latest?cb=20151027000548",
+        description: `
+        **Lyra Heartstrings** is an occurring background character who is usually alongside her wife Bon Bon (Sweetie Drops).
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.Blue
     }
 ]
 
