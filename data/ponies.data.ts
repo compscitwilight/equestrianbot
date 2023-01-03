@@ -39,7 +39,8 @@ export enum Species {
     Minotaur = "Minotaur",
     Phoenix = "Phoenix",
     Siren = "Siren",
-    Tantabus = "Tantabus"
+    Tantabus = "Tantabus",
+    Yak = "Yak"
 }
 
 export function getPony(name: string) {
