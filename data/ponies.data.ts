@@ -159,6 +159,17 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Unicorn,
         color: Colors.DarkBlue
+    },
+    {
+        name: "Queen Chrysalis",
+        image: "https://static.wikia.nocookie.net/mlp/images/a/a2/Queen_Chrysalis_ID_S9E8.png/revision/latest?cb=20190520065817",
+        description: `
+        **Queen Chrysalis** is a changeling villian who formerly ruled the Changeling Kingdom. She disguised herself as Princess Cadance when her and Shining Armor were about
+        to marry each other. She is one of the only changelings to remain evil after "To Change a Changeling".
+        `,
+        gen: Generation.G4,
+        type: Species.Changeling,
+        color: Colors.DarkButNotBlack
     }
 ]
 
