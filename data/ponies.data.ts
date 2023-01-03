@@ -195,6 +195,38 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Draconequus,
         color: Colors.DarkOrange
+    },
+    {
+        name: "Applebloom",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/1c/Apple_Bloom_ID_S6E4.png/revision/latest?cb=20160411140505",
+        description: `
+        **Applebloom** is a school-age Earth pony who is the leader of the **Cutie Mark Crusaders**. She is the younger sister of Applejack and Big Mac, and lives on Sweet Apple Acres.
+        She earned her cutie mark in "Crusaders of the Lost Mark" along with her friends Sweetie Belle and Scootaloo.
+        `,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Red
+    },
+    {
+        name: "Sweetie Belle",
+        image: "https://static.miraheze.org/mylittleponywiki/e/e8/S8E6_Sweetie.png",
+        description: `
+        **Sweetie Belle** is a school-age unicorn who is a member of the **Cutie Mark Crusaders**, and the younger sister of Rarity.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.White
+    },
+    {
+        name: "Scootaloo",
+        image: "https://static.wikia.nocookie.net/mlp/images/5/5a/Scootaloo_ID_S6E4.png/revision/latest?cb=20160411140522",
+        description: `
+        **Scootaloo** is a school-age pegasus who is a member of the **Cutie Mark Crusaders**. She is a talented scooterist, and the younger sister figure of
+        Rainbow Dash.
+        `,
+        gen: Generation.G4,
+        type: Species.Pegasus,
+        color: Colors.Orange
     }
 ]
 
