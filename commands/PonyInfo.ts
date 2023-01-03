@@ -19,7 +19,7 @@ export default {
         });
         console.log(choices);
         const filtered = choices.filter((choice) => {
-            choice.toLowerCase().startsWith(val.value.toLowerCase());
+            return choice.toLowerCase().startsWith(val.value.toLowerCase());
         });
         console.log(filtered);
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
