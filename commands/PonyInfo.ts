@@ -13,12 +13,12 @@ export default {
         ),
     execute: async (interaction: Interaction) => {
         if (interaction.isAutocomplete()) {
-            const val = interaction.options.getFocused();
+            const val = interaction.options.getFocused(true);
             console.log(val);
             const choices = Ponies.map((pony) => {
                 return pony.name;
             });
-            const filtered = choices.filter((choice) => choice.startsWith(val));
+            const filtered = choices.filter((choice) => choice.startsWith(val.value));
             await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
         }
     }
