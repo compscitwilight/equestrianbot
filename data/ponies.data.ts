@@ -42,6 +42,10 @@ export enum Species {
     Tantabus = "Tantabus"
 }
 
+export function getPony(name: string) {
+    return Ponies.find((pony) => pony.name == name);
+}
+
 var Ponies: Pony[] = [
     {
         honorificPrefix: "Princess",
