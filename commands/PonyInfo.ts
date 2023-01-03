@@ -25,7 +25,7 @@ export default {
     execute: (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
         let options = ((interaction as unknown) as AutocompleteInteraction).options;
-        let arg = options.getString("pony", true);
+        let arg = options.getString("pony");
         if (!arg) return;
 
         let pony = getPony(arg);
