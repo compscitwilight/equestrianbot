@@ -153,7 +153,7 @@ var Ponies: Pony[] = [
         name: "Prince Shining Armor",
         image: "https://i.pinimg.com/originals/80/1a/07/801a077b078ec2a29f19b3e0d6565c8d.png",
         description: `
-        **Prince Shining Armor** is a unicorn who is the older brother of Princess Twilight Sparkle, and the wife of Princess Cadance. He, alongside Princess Cadance rule the
+        **Prince Shining Armor** is a unicorn who is the older brother of Princess Twilight Sparkle, and the husband of Princess Cadance. He, alongside Princess Cadance rule the
         Crystal Empire and protect it with their magic.
         `,
         gen: Generation.G4,
