@@ -1,3 +1,5 @@
+import { Colors } from "discord.js"
+
 // NOTE: Not all characters in the database are ponies. This covers all species, from Changelings,
 // to Discord, and to Lord Tirek.
 export interface Pony {
@@ -5,8 +7,10 @@ export interface Pony {
     name: string,
     honorificSuffix?: string | string[],
     description?: string,
+    image?: string,
     gen: Generation,
-    type: Species
+    type: Species,
+    color: number
 }
 
 export enum Generation {
@@ -46,7 +50,8 @@ var Ponies: Pony[] = [
         She is depicted as a studious pony who loves magic. Her cutie mark resembles Magic, and her Element of Harmony also resembles Magic.
         `,
         gen: Generation.G4,
-        type: Species.Alicorn
+        type: Species.Alicorn,
+        color: Colors.Purple
     }
 ]
 

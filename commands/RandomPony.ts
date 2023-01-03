@@ -1,5 +1,6 @@
-import { SlashCommandBuilder, Interaction, CacheType, Colors } from "discord.js";
+import { SlashCommandBuilder, Interaction, Colors } from "discord.js";
 import { CreatePonyEmbed } from "../embeds/Pony";
+import { Ponies } from "../data/ponies.data";
 
 export default {
     data: new SlashCommandBuilder()
@@ -7,14 +8,21 @@ export default {
         .setDescription("Sends a random pony with a brief description, image, and "),
     execute: async (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
+        let index = Math.floor(Math.random() * Ponies.length);
+        let pony = Ponies[index];
         let embed = CreatePonyEmbed(
-            "Twilight Sparkle",
-            "Twilight Sparkle is the Princess of Friendship",
-            "https://upload.wikimedia.org/wikipedia/en/b/b4/PrincessTwilightSparkle.png?20190522020410",
-            Colors.Purple
+            pony.name,
+            pony.description
         )
+
+        if (pony.image)
+            embed.setImage(pony.image);
+
+        if (pony.color)
+            embed.setColor(pony.color);
+
         interaction.reply({
-            content: "Randompony is currently under development, but for now here's some info about Twilight Sparkle.",
+            content: "🎲 RandomPony!",
             embeds: [embed]
         });
     }
