@@ -304,6 +304,26 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Zebra,
         color: Colors.White
+    },
+    {
+        name: "DJ Pon-3",
+        image: "https://static.wikia.nocookie.net/mlp/images/0/0d/DJ_Pon-3_ID_S5E9.png/revision/latest?cb=20150616214305",
+        description: `
+        **DJ Pon-3** is a disc-jockey unicorn who appears as a background character. She is always seen wearing headphones and sunglasses, and she does not talk.
+        `,
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.White
+    },
+    {
+        name: "Octavia Melody",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/1e/Octavia_Melody_ID_S4E23.png/revision/latest?cb=20150616023924",
+        description: `
+        **Octavia Melody** is a cellist Earth pony who acts as a background character. She is always seen playing a cello.
+        `,
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
     }
 ]
 
