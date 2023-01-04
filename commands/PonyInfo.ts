@@ -33,7 +33,7 @@ export default {
             return choice.toLowerCase().includes(val.value.toLowerCase());
         });
         filtered.sort();
-        
+
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
     execute: async (interaction: Interaction) => {
@@ -58,7 +58,7 @@ export default {
             components: [button]
         });
 
-        let collector = interaction.channel.createMessageComponentCollector({time: 15000});
+        let collector = interaction.channel.createMessageComponentCollector();
         collector.on("collect", (interaction) => {
             RandomPony.execute(interaction);
         })
