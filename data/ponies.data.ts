@@ -316,6 +316,22 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Owl,
         color: Colors.DarkOrange
+    },
+    {
+        name: "Diamond Tiara",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/6d/Diamond_Tiara_ID_S5E18.png/revision/latest?cb=20151020181357",
+        description: "**Diamond Tiara** is a school-age Earth pony who was formerly the antagonist of the **Cutie Mark Crusaders** and other fillies, alongside her friend Silver Spoon. She changed herself after discovering what her true talent was, and thus cuasing the Cutie Mark Crusaders to earn their cutie marks. Her parents are Filthy Rich and Spoiled Rich.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Purple
+    },
+    {
+        name: "Silver Spoon",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/16/Silver_Spoon_ID_S4E15.png/revision/latest?cb=20140226190706",
+        description: "**Silver Spoon** is a school-age Earth pony who was formerly the antagonist of the **Cutie Mark Crusaders** alongside her friend Diamond Tiara. She changed herself after Diamond Tiara told her that her opinion wasn't valuable in \"Crusaders of the Lost Mark\".",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LightGrey
     }
 ]
 
