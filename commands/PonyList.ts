@@ -12,7 +12,7 @@ export default {
         interaction.reply("I've sent a list to your DMs.");
 
         let list = Ponies.map((pony) => {
-            return `* ${pony.name}\n`;
+            return `${pony.name}`;
         })
 
         let dmChannel = await interaction.user.createDM(true);
