@@ -10,6 +10,7 @@ import {
 import Command from "../Command"
 import { getPony, Ponies } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
+import RandomPony from "./RandomPony";
 
 export default {
     data: new SlashCommandBuilder()
@@ -54,6 +55,11 @@ export default {
         let row = new ActionRowBuilder<ButtonBuilder>({
             components: [button]
         });
+
+        let collector = interaction.channel.createMessageComponentCollector({time: 15000});
+        collector.on("collect", (interaction) => {
+            RandomPony.execute(interaction);
+        })
 
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
