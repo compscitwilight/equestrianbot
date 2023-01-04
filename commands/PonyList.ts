@@ -5,7 +5,7 @@ import { Ponies } from "../data/ponies.data";
 export default {
     data: new SlashCommandBuilder()
         .setName("ponylist")
-        .setDescription("Returns a list of all of the characters.")
+        .setDescription("Returns a list of all of the characters to your DMs.")
         .setDMPermission(true),
     execute: async (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
