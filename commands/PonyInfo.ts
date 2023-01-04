@@ -6,10 +6,10 @@ import { CreatePonyEmbed } from "../embeds/Pony";
 export default {
     data: new SlashCommandBuilder()
         .setName("ponyinfo")
-        .setDescription("Returns an embed containing information about a pony being searched. (NOTE: Use </ponylist:0> to list all characters.)")
+        .setDescription("Returns an embed containing information about a pony being searched.")
         .addStringOption((option: SlashCommandStringOption) =>
             option.setName("pony")
-                .setDescription("The character that you want information about.")
+                .setDescription("Use </ponylist:0> to list all characters.")
                 .setAutocomplete(true)
                 .setRequired(true)
         ),
