@@ -44,7 +44,8 @@ export enum Species {
     Zebra = "Zebra",
     Alligator = "Alligator",
     Bunny = "Bunny",
-    Owl = "Owl"
+    Owl = "Owl",
+    Tortoise = "Tortoise"
 }
 
 export function getPony(name: string) {
@@ -340,6 +341,326 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Unicorn,
         color: Colors.DarkRed
+    },
+    {
+        name: "Tank",
+        image: "https://static.wikia.nocookie.net/mlp/images/4/4d/Tank_flying_around_S2E7.png/revision/latest?cb=20111121053051",
+        description: "**Tank** is a tortoise who is Rainbow Dash's pet. She competed with other animals in the episode \"May The Best Pet Win!\".",
+        gen: Generation.G4,
+        type: Species.Tortoise,
+        color: Colors.DarkGreen
+    },
+    {
+        name: "Star Swirl the Bearded",
+        image: "https://static.wikia.nocookie.net/mlp/images/7/76/Star_Swirl_the_Bearded_ID_S7E26.png/revision/latest?cb=20171012212227",
+        description: "**Star Swirl the Bearded** is a notable unicorn who is known for his outstanding magical abilities, being considered the most talented unicorn in the history of Equestria.",
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.Navy
+    },
+    {
+        name: "Aloe",
+        image: "https://static.wikia.nocookie.net/mlp/images/9/96/Aloe_id_S1E20.png/revision/latest?cb=20110706130024",
+        description: "**Aloe** is a background character who works at the Ponyville Day Spa.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LuminousVividPink
+    },
+    {
+        name: "Blue Bobbin",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/b0/Blue_Bobbin_ID_S6E9.png/revision/latest?cb=20160521225422",
+        description: "**Blue Bobbin** is a Earth pony who works at Rarity For You as a salespony.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Butternut",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/1e/Butternut_ID_MLPBGE.png/revision/latest?cb=20181028200738",
+        description: "**Butternut** is a Earth pony who only appears in \"The Best Gift Ever\" as an acorn farmer.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Charity Kindheart",
+        image: "https://static.wikia.nocookie.net/mlp/images/c/cd/Charity_Kindheart_ID_S5E16.png/revision/latest?cb=20150928041100",
+        description: "**Charity Kindheart** is a Earth pony who is the costume designer and founder of the Midsummer Theatre Revival in Manehattan.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Cheerilee",
+        image: "https://static.wikia.nocookie.net/mlp/images/3/3d/Cheerilee_ID_S2E17.png/revision/latest?cb=20150709040905",
+        description: "**Cherilee** is a Earth pony who works as a teacher at the Ponyville Schoolhouse.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkVividPink
+    },
+    {
+        name: "Cherry Jubilee",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/13/Cherry_Jubilee_id_S02E14.png/revision/latest?cb=20121205061839",
+        description: "**Cherry Jubilee** is an Earth pony who is the founder and boss of Cherry Hill Ranch.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Red
+    },
+    {
+        name: "Coco Pommel",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/bc/Coco_Pommel_ID_S4E8.png/revision/latest?cb=20140106102133",
+        description: "**Coco Pommel** is an Earth pony who is a Bridleway dressmaker. She has worked with Rarity, and is the former assistant of Suri Polomare",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Coloratura",
+        image: "https://static.wikia.nocookie.net/mlp/images/4/4f/Coloratura_ID_S5E24.png/revision/latest?cb=20160331020344",
+        description: "**Coloratura** (or **Rara** and formerly **Countess Coloratura** is a Earth pony popstar in Equestria. She was childhood friends with Applejack.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Blue
+    },
+    {
+        name: "Dr. Fauna",
+        image: "https://static.wikia.nocookie.net/mlp/images/c/c0/Mane_Goodall_smiling_at_Spike_S2E10.png/revision/latest/scale-to-width-down/1000?cb=20160119194822",
+        description: "**Dr. Fauna** is a Earth pony veterinarian.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Aunt Holiday",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/16/Aunt_Holiday_ID_S9E12.png/revision/latest?cb=20190615160829",
+        description: "**Aunt Holiday** is one of Scootaloo's aunts.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Hoofer Steps",
+        image: "https://static.wikia.nocookie.net/mlp/images/2/23/Hoofer_Steps_ID_S6E4.png/revision/latest?cb=20160411015253",
+        description: "**Hoofer Steps** is a dance instructor.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.White
+    },
+    {
+        name: "Junebug",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/17/Junebug_ID_S2E10.png/revision/latest?cb=20111213200330",
+        description: "**Junebug** is a Background pony.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Lighthoof",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/df/Lighthoof_ID_S9E15.png/revision/latest?cb=20190810210701",
+        description: "**Lighthoof** is an Earth pony who is a cheerleader at Twilight's School of Friendship.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Blue
+    },
+    {
+        name: "Lotus Blossom",
+        image: "https://static.wikia.nocookie.net/mlp/images/8/87/Lotus_Blossom_id_S1E9.png/revision/latest?cb=20130204012145",
+        description: "**Lotus Blossom** is an Earth pony who works at Ponyville Day Spa.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Blue
+    },
+    {
+        name: "Mage Meadowbrook",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/df/Mage_Meadowbrook_ID_S7E20.png/revision/latest?cb=20170924235649",
+        description: "**Mage Meadowbrook** is an Earth pony who is a figure of Equestrian legend.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Blue
+    },
+    {
+        name: "Mane-iac",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/6e/Mane-iac_ID_S4E06.png/revision/latest?cb=20210912015302",
+        description: "**Mane-iac** is an Earth-pony villian from Maretropolis.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkPurple
+    },
+    {
+        name: "Maud Pie",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/10/Maud_Pie_ID_S4E18.png/revision/latest?cb=20140317163136",
+        description: "**Maud Pie** is an Earth pony who is the sister of Pinkie Pie. She has a pet rock named \"Boulder\", and is extremely obsessed with rocks. She has her own version of future telling ability, called \"Maud Sense\", similar to Pinkie Pie's \"Pinkie Sense\".",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LightGrey
+    },
+    {
+        name: "Mayor Mare",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/68/Mayor_Mare_id_S02E15.png/revision/latest?cb=20150916054559",
+        description: "**Mayor Mare** is an Earth pony who is the Mayor of Ponyville.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Mrs. Cup Cake",
+        image: "https://static.wikia.nocookie.net/mlp/images/7/78/Mrs._Cake_greeting_ID_S1E25.png/revision/latest?cb=20111201194348",
+        description: "**Mrs. Cup Cake** is an Earth pony who owns Sugarcube Corner with Mr. Carrot Cake.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LuminousVividPink
+    },
+    {
+        name: "Mr. Carrot Cake",
+        image: "https://static.wikia.nocookie.net/mlp/images/e/ea/Mr._Cake_ID_S2E10.png/revision/latest?cb=20131029203445",
+        description: "**Mr. Carrot Cake** is an Earth pony who owns Sugarcube Corner with Mrs. Cup Cake.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Ms. Harshwhinny",
+        image: "https://static.wikia.nocookie.net/mlp/images/7/7e/Ms._Harshwhinny_ID_S4E05.png/revision/latest?cb=20140427172856",
+        description: "**Ms. Harshwinny** is an Earth pony who is the Equestria Games inspector.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkOrange
+    },
+    {
+        name: "Ms. Peachbottom",
+        image: "https://static.wikia.nocookie.net/mlp/images/9/98/Ms._Peachbottom_id_S3E12.png/revision/latest?cb=20140403081911",
+        description: "**Ms. Peachbottom** is a background pony who was mistaken for the Equestria Games inspector by the Mane 6 in the Crystal Empire.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Nurse Redheart",
+        image: "https://static.wikia.nocookie.net/mlp/images/5/5d/Nurse_Redheart_ID_S7E3.png/revision/latest?cb=20170503175548",
+        description: "**Nurse Redheart** is an Earth pony who works at Ponyville Hospital.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.White
+    },
+    {
+        name: "Orange Slice",
+        image: "https://static.wikia.nocookie.net/mlp/images/5/54/Orange_Slice_ID_S6E12.png/revision/latest?cb=20160611214758",
+        description: "**Orange Slice** is an Earth pony background character who is the wife of Chargril Breadwinner",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Petunia Petals",
+        image: "https://static.wikia.nocookie.net/mlp/images/2/23/Petunia_Petals_ID_MLPRR.png/revision/latest?cb=20220615230152",
+        description: "**Petunia Petals** is an Earth pony who works as a hotel manager in Hope Hollow.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkVividPink
+    },
+    {
+        name: "Photo Finish",
+        image: "https://static.wikia.nocookie.net/mlp/images/c/c0/Photo_Finish_S1E20_thumb.png/revision/latest?cb=20120627225352",
+        description: "**Photo Finish** is an Earth pony who is a famous photographer in Equestria.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Purple
+    },
+    {
+        name: "Prim Hemline",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/b5/Prim_Hemline_ID_S4E08.png/revision/latest?cb=20140107052458",
+        description: "**Prim Hemline** is an Earth pony who is a fashion critic. She is the judge for Manehattan's Fashion Week.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LuminousVividPink
+    },
+    {
+        name: "Professor Fossil",
+        image: "https://static.wikia.nocookie.net/mlp/images/b/ba/Professor_Fossil_ID_S7E25.png/revision/latest?cb=20171012052922",
+        description: "**Professor Fossil** is an Earth pony who is the professor of an archeological dig at Rockhoof's island home.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LightGrey
+    },
+    {
+        name: "\"Roma\"",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/d5/Roma_ID_S2E19.png/revision/latest?cb=20160113192129",
+        description: "**\"Roma\"** is a background Earth pony with a fan-given name. She works as a market salespony.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Sapphire Shores",
+        image: "https://static.wikia.nocookie.net/mlp/images/a/a5/Sapphire_Shores_ID_S4E19.png/revision/latest?cb=20140325182812",
+        description: "**Sapphire Shores** is an Earth pony who is a famous popstar across Equestria. She is titled \"The Pony of Pop\" by Rarity.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Blue
+    },
+    {
+        name: "Shimmy Shake",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/dd/Shimmy_Shake_ID_S9E15.png/revision/latest?cb=20190810210717",
+        description: "**Shimmy Shake** is an Earth pony who is a cheerleader at Twilight's School of Friendship.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Spoiled Rich",
+        image: "https://static.wikia.nocookie.net/mlp/images/6/6d/Spoiled_Rich_ID_S5E18.png/revision/latest?cb=20151020181406",
+        description: "**Spoiled Rich** is an Earth pony who is the mother of Diamond Tiara, and the wife of Filthy Rich.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.DarkVividPink
+    },
+    {
+        name: "Suri Polomare",
+        image: "https://static.wikia.nocookie.net/mlp/images/3/32/Suri_Polomare_ID_S4E08.png/revision/latest?cb=20140107052206",
+        description: "**Suri Polomare** is an Earth pony who stole Rarity's designs and fabric.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.LuminousVividPink
+    },
+    {
+        name: "Teddie Safari",
+        image: "https://static.wikia.nocookie.net/mlp/images/e/e5/Teddie_Safari_ID_S4E22.png/revision/latest?cb=20140609074155",
+        description: "**Teddie Surfari** is a background Earth pony who is a collector of Daring Do merchandise.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Orange
+    },
+    {
+        name: "Torch Song",
+        image: "https://static.wikia.nocookie.net/mlp/images/1/11/Torch_Song_ID_S4E14.png/revision/latest?cb=20140219064437",
+        description: "**Torch Song** is an Earth pony who is a member of \"The Pony Tones\", a vocal group.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Torque Wrench",
+        image: "https://static.wikia.nocookie.net/mlp/images/4/4e/Torque_Wrench_ID_MLPRR.png/revision/latest?cb=20220615230156",
+        description: "**Torque Wrench** is an Earth pony who appears in \"Rainbow Roadtrip\" as a repairer in Hope Hollow.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Trapeze Star",
+        image: "https://static.wikia.nocookie.net/mlp/images/a/a8/Trapeze_Star_ID_S6E20.png/revision/latest?cb=20160919000956",
+        description: "**Trapeze Star** is an Earth pony who appears as a trapeze artist in Pone Fantastique.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Yellow
+    },
+    {
+        name: "Tree Hugger",
+        image: "https://static.wikia.nocookie.net/mlp/images/3/35/Tree_Hugger_ID_S5E7.png/revision/latest?cb=20151209190014",
+        description: "**Tree Hugger** is an Earth pony who is friends with Fluttershy. She caused Discord to get jealous after he saw her hanging out with Fluttershy a lot, and attempted to crash the Grand Galloping Gala when Fluttershy took her instead of Discord. Like Fluttershy, she also has a gift in animals.",
+        gen: Generation.G4,
+        type: Species.Earth,
+        color: Colors.Green
     }
 ]
 
