@@ -87,8 +87,10 @@ export default {
             return;
         })
 
+        let statsEmbed = getStatsEmbed();
         await interaction.reply({
-            components: [row]
+            components: [row],
+            embeds: [statsEmbed]
         })
     }
 } as Command
