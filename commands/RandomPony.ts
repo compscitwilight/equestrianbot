@@ -9,9 +9,21 @@ function sendRandomPony(interaction: Interaction) {
     let pony = Ponies[index];
     let embed = CreatePonyEmbed(pony);
 
+    let repeatButton = new ButtonBuilder({
+        customId: "primary",
+        label: "Get another",
+        style: ButtonStyle.Success
+    })
+    let row = new ActionRowBuilder<ButtonBuilder>({components: [repeatButton]})
+    let collector = interaction.channel.createMessageComponentCollector({time: 15000});
+    collector.on("collect", () => {
+        sendRandomPony(interaction);
+    })
+
     interaction.reply({
         content: "🎲 RandomPony!",
-        embeds: [embed]
+        embeds: [embed],
+        components: [row]
     });
 }
 
@@ -20,17 +32,6 @@ export default {
         .setName("randompony")
         .setDescription("Sends a random pony with a brief description, image, and "),
     execute: async (interaction: Interaction) => {
-        let repeatButton = new ButtonBuilder({
-            customId: "primary",
-            label: "Get another",
-            style: ButtonStyle.Success
-        })
-        let row = new ActionRowBuilder({components: [repeatButton]})
-        let collector = interaction.channel.createMessageComponentCollector({time: 15000});
-        collector.on("collect", () => {
-            sendRandomPony(interaction);
-        })
-
         sendRandomPony(interaction);
     }
 } as Command;
