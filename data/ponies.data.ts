@@ -68,7 +68,7 @@ var Ponies: Pony[] = [
         name: "Pinkie Pie",
         image: "https://static.wikia.nocookie.net/mlp/images/b/b2/Pinkie_Pie_ID_S4E11.png/revision/latest?cb=20190410214815",
         cutieMark: "https://i.pinimg.com/originals/e8/9d/93/e89d937080ee5b651393d9cba5feee82.png",
-        description: "**Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties.",
+        description: "**Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties. She is part of the Mane 6 and represents the Element of Laughter. She is seen as a naive pony, but has been proven to actually be very intelligent, and possibly supernatural due to her future telling ability called \"Pinkie Sense\".",
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.LuminousVividPink
