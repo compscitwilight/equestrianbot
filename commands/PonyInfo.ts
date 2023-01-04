@@ -9,7 +9,7 @@ export default {
         .setDescription("Returns an embed containing information about a pony being searched.")
         .addStringOption((option: SlashCommandStringOption) =>
             option.setName("pony")
-                .setDescription("Use </ponylist:0> to list all characters.")
+                .setDescription("Use </ponylist:1059743898815184946> to list all characters.")
                 .setAutocomplete(true)
                 .setRequired(true)
         ),
