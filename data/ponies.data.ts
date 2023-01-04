@@ -8,6 +8,7 @@ export interface Pony {
     honorificSuffix?: string | string[],
     description?: string,
     image?: string,
+    cutieMark?: string,
     gen: Generation,
     type: Species,
     color: number
