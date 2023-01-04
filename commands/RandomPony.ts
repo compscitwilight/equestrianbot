@@ -32,6 +32,7 @@ export default {
                 embeds: [embed],
                 components: [row]
             })
+            collector.stop("You have already requested another random pony.");
         })
 
         let embed = getRandomPonyEmbed();
