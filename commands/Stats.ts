@@ -83,7 +83,7 @@ export default {
         let collector = interaction.channel.createMessageComponentCollector({time: 15000});
         collector.on("collect", async () => {
             let extendedStatsEmbed = getExtendedStatsEmbed();
-            await interaction.reply({
+            await interaction.followUp({
                 embeds: [extendedStatsEmbed]
             })
             return;
