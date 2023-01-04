@@ -53,6 +53,11 @@ export function getPony(name: string) {
     return Ponies.find((pony) => pony.name.toLowerCase() == name.toLowerCase());
 }
 
+export function getPonyId(pony: Pony) {
+    let index = Ponies.indexOf(pony);
+    return index;
+}
+
 var Ponies: Pony[] = [
     {
         honorificPrefix: "Princess",
