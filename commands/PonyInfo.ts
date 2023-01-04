@@ -17,11 +17,12 @@ export default {
         const choices = Ponies.map((pony) => {
             return pony.name;
         });
+        choices.length = 25;
+
         const filtered = choices.filter((choice) => {
             return choice.toLowerCase().startsWith(val.value.toLowerCase());
         });
 
-        filtered.length = 25; // cap
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
     execute: (interaction: Interaction) => {
