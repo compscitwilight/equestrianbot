@@ -86,7 +86,6 @@ export default {
             await interaction.followUp({
                 embeds: [extendedStatsEmbed]
             })
-            return;
         })
 
         let statsEmbed = getStatsEmbed();
