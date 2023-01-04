@@ -1,4 +1,12 @@
-import { AutocompleteInteraction, Interaction, SlashCommandBuilder, SlashCommandStringOption } from "discord.js";
+import {
+    AutocompleteInteraction,
+    Interaction,
+    SlashCommandBuilder,
+    SlashCommandStringOption,
+    ActionRowBuilder,
+    ButtonBuilder,
+    ButtonStyle
+} from "discord.js";
 import Command from "../Command"
 import { getPony, Ponies } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
@@ -26,7 +34,7 @@ export default {
 
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
-    execute: (interaction: Interaction) => {
+    execute: async (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
         let options = ((interaction as unknown) as AutocompleteInteraction).options;
         let arg = options.getString("pony");
@@ -38,9 +46,19 @@ export default {
             return;
         };
 
+        let button = new ButtonBuilder({
+            label: "Get a random pony",
+            style: ButtonStyle.Success
+        });
+        let row = new ActionRowBuilder<ButtonBuilder>({
+            components: [button]
+        });
+
         let embed = CreatePonyEmbed(pony);
-        interaction.reply({
-            embeds: [embed]
+        await interaction.reply({
+            content: "Loaded!",
+            embeds: [embed],
+            components: [row]
         })
     }
 } as Command;
