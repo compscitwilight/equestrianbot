@@ -67,6 +67,7 @@ var Ponies: Pony[] = [
     {
         name: "Pinkie Pie",
         image: "https://static.wikia.nocookie.net/mlp/images/b/b2/Pinkie_Pie_ID_S4E11.png/revision/latest?cb=20190410214815",
+        cutieMark: "https://i.pinimg.com/originals/e8/9d/93/e89d937080ee5b651393d9cba5feee82.png",
         description: "**Pinkie Pie** is an Earth Pony who represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties.",
         gen: Generation.G4,
         type: Species.Earth,
@@ -75,6 +76,7 @@ var Ponies: Pony[] = [
     {
         name: "Fluttershy",
         image: "https://static.wikia.nocookie.net/mlp/images/d/d6/Fluttershy_ID_S1E17.png/revision/latest?cb=20190410214903",
+        cutieMark: "https://i.pinimg.com/originals/bc/89/7b/bc897b2d5ec694ee13a987b5ced101f7.png",
         description: "**Fluttershy** is a yellow pegasus who represents the Element of Kindness. She is part of the Mane 6 and is usually portrayed as a shy and introverted pony. She has a special ability to communicate with other animals, and reformed Discord in \"Keep Calm and Flutter On\". She has the ability to do \"the Stare\", which allows her to intimidate animals.",
         gen: Generation.G4,
         type: Species.Pegasus,
@@ -83,6 +85,7 @@ var Ponies: Pony[] = [
     {
         name: "Rainbow Dash",
         image: "https://static.wikia.nocookie.net/mlp/images/6/60/Rainbow_Dash_ID_T3E7.png/revision/latest?cb=20150302214756&path-prefix=es",
+        cutieMark: "https://i.pinimg.com/originals/5b/c7/87/5bc787f4ed276703dbe2805773020e9d.png",
         description: "**Rainbow Dash** is a blue pegasus who represents the Element of Loyalty. She is a member of the Mane 6, and the Wonderbolts. She is an egotistical, competitve, and loyal pegasus, and even has her own fanclub ran by Scootaloo. She is one of the most iconic pegasi in My Little Pony.",
         gen: Generation.G4,
         type: Species.Pegasus,
@@ -91,6 +94,7 @@ var Ponies: Pony[] = [
     {
         name: "Rarity",
         image: "https://i.pinimg.com/736x/70/3b/be/703bbe46a2fdea09f5f949d25f6c9001--pony-style-girly-stuff.jpg",
+        cutieMark: "https://i.pinimg.com/736x/37/0c/2b/370c2b8d28327e679f1bbb097e68ec44.jpg",
         description: "**Rarity** is a unicorn who represents the Element of Generosity. She is part of the Mane 6 and is portrayed as an overdramatic fashionista. She owns a boutique in Canterlot, and is famous across Equestria for her fashion.",
         gen: Generation.G4,
         type: Species.Unicorn,
@@ -99,6 +103,7 @@ var Ponies: Pony[] = [
     {
         name: "Applejack",
         image: "https://1.bp.blogspot.com/-1gaCoMUcaGU/XoJHyMI9zSI/AAAAAAADVaM/mPQrY7r35O4_6WkHRAbTm4aLmjrSlsVSwCLcBGAsYHQ/s1600/large.png",
+        cutieMark: "https://i.pinimg.com/originals/88/de/85/88de85d64f67cad89ff0f1f1fe4b7b0e.jpg",
         description: "**Applejack** is an Earth pony who represents the Element of Honesty. She is a member of the Mane 6, and the Apple Family. She works on Sweet Apple Acres with her younger sister Applebloom, her older brother Big Mac, and her grandmother Granny Smith. She is portrayed as a wise cowgirl.",
         gen: Generation.G4,
         type: Species.Earth,
@@ -107,6 +112,7 @@ var Ponies: Pony[] = [
     {
         name: "Princess Celestia",
         image: "https://static.wikia.nocookie.net/mlp/images/2/2a/Princess_Celestia_ID_S4E01.png/revision/latest?cb=20140322224921",
+        cutieMark: "https://i.pinimg.com/originals/0a/d0/f0/0ad0f0c04be2654d98cbf4a103149342.png",
         description: "**Princess Celestia** is one of the regal sisters of Equestria. Alongside her sister Princess Luna, she is in charge of rising the sun, maintaining peace in Equestria, and mentoring Twilight Sparkle. She is one of the most famous ponies in all of Equestrian history. She and her sister defeated Discord using the Elements of Harmony when he first gained control of Equestria.",
         gen: Generation.G4,
         type: Species.Alicorn,
@@ -115,6 +121,7 @@ var Ponies: Pony[] = [
     {
         name: "Princess Luna",
         image: "https://static.wikia.nocookie.net/mlp/images/1/18/Princess_Luna_ID_S5E04.png/revision/latest?cb=20150422172452",
+        cutieMark: "https://i.pinimg.com/originals/e4/b1/0c/e4b10c9d0ee9e2e014cdc974ece75d39.png",
         description: "**Princess Luna** is one of the regal sisters of Equestria. Alongside her sister Princess Celestia, she is in charge of rising the moon, and helping ponies in their dreams. Princess Luna was banished to the moon after turning into **Nightmare Moon** over 1,000 years ago by her sister using the Elements of Harmony. Nightmare Moon was defeated in the My Little Pony: Friendship is Magic premiere by the Mane 6.",
         gen: Generation.G4,
         type: Species.Alicorn,
@@ -123,6 +130,7 @@ var Ponies: Pony[] = [
     {
         name: "Princess Cadance",
         image: "https://static.wikia.nocookie.net/mlp/images/6/6f/Princess_Cadance_ID_S4E11.png/revision/latest/scale-to-width-down/225?cb=20140128163901",
+        cutieMark: "https://i.pinimg.com/originals/a0/a9/65/a0a965bab2ed3add0630cf290acc89f6.png",
         description: "**Princess Cadance** is an Alicorn who is the Princess of the Crystal Empire, alongside Prince Shining Armor. She is the former foal-sitter of Princess Twilight Sparkle, the wife of her brother, and her sister-in-law. She is in charge of maintaining the defense of the Crystal Empire by using her magic.",
         gen: Generation.G4,
         type: Species.Alicorn,
@@ -135,6 +143,14 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Unicorn,
         color: Colors.DarkBlue
+    },
+    {
+        name: "Princess Flurryheart",
+        image: "https://static.wikia.nocookie.net/mlp/images/7/71/Flurry_Heart_ID_S6E1.png/revision/latest?cb=20160327000953",
+        description: "**Princess Flurryheart** is an alicorn-born princess. She was the first ever pony in recorded history to be born an alicorn. Her parents are Princess Cadance and Prince Shining Armor, and her aunt is Princess Twilight Sparkle.",
+        gen: Generation.G4,
+        type: Species.Alicorn,
+        color: Colors.LuminousVividPink
     },
     {
         name: "Queen Chrysalis",
