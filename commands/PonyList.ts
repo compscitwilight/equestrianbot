@@ -1,5 +1,5 @@
 import Command from "../Command";
-import { Interaction, SlashCommandBuilder } from "discord.js";
+import { Interaction, SlashCommandBuilder, PermissionFlagsBits } from "discord.js";
 import { Ponies } from "../data/ponies.data";
 
 export default {
@@ -16,6 +16,13 @@ export default {
         })
 
         let dmChannel = await interaction.user.createDM(true);
+        if (!dmChannel) {
+            interaction.reply({
+                content: "Sorry, but I am not allowed to send you any direct messages."
+            })
+            return;
+        }
+
         dmChannel.send({
             content: list.toString().replace(/,*/, "")
         })
