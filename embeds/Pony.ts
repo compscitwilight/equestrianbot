@@ -27,5 +27,9 @@ export function CreatePonyEmbed(data: Pony) {
         embed.setImage(data.image);
     }
 
+    if (data.cutieMark) {
+        embed.setThumbnail(data.cutieMark);
+    }
+
     return embed;
 }
