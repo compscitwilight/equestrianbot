@@ -35,13 +35,13 @@ export function getStatsEmbed() {
             text: "Created by rust#7643"
         }
     });
-    statsEmbed.setImage("https://static.wikia.nocookie.net/mlp/images/1/1c/Apple_Bloom_ID_S6E4.png/revision/latest?cb=20160411140505");
+    statsEmbed.setThumbnail("https://static.wikia.nocookie.net/mlp/images/1/1c/Apple_Bloom_ID_S6E4.png/revision/latest?cb=20160411140505");
     return statsEmbed;
 }
 
 export function getExtendedStatsEmbed() {
     let statsEmbed = getStatsEmbed();
-    statsEmbed.setImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSdwjJDUmlpvn_8mgGowTqaks8SkdJCMxTyvdXJit2YjeAUJE4XJGLPeHIoXgBF71iNU4&usqp=CAU");
+    statsEmbed.setThumbnail("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSdwjJDUmlpvn_8mgGowTqaks8SkdJCMxTyvdXJit2YjeAUJE4XJGLPeHIoXgBF71iNU4&usqp=CAU");
     statsEmbed.addFields([
         {
             name: "Node Version",
