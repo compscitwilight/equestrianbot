@@ -32,7 +32,8 @@ export default {
         const filtered = choices.filter((choice) => {
             return choice.toLowerCase().includes(val.value.toLowerCase());
         });
-
+        filtered.sort();
+        
         await interaction.respond(filtered.map((choice) => ({name: choice, value: choice})));
     },
     execute: async (interaction: Interaction) => {
