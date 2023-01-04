@@ -18,7 +18,7 @@ export default {
             return pony.name;
         });
         const filtered = choices.filter((choice) => {
-            return choice.toLowerCase().includes(val.value.toLowerCase());
+            return choice.toLowerCase().startsWith(val.value.toLowerCase());
         });
 
         filtered.length = 25; // cap
