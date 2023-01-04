@@ -47,6 +47,7 @@ export default {
         };
 
         let button = new ButtonBuilder({
+            customId: "primary",
             label: "Get a random pony",
             style: ButtonStyle.Success
         });
