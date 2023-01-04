@@ -23,8 +23,14 @@ export default {
             return;
         }
 
+        let msg = "";
+        for (var i = 0; i < list.length; i++) {
+            let listing = list[i];
+            msg += `**•** ${listing}\n`
+        }
+
         dmChannel.send({
-            content: list.toString().replace(/,*/, "")
+            content: msg
         })
     }
 } as Command
