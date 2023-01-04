@@ -23,7 +23,7 @@ function updateStatusCount() {
 
     client.user.setActivity({
         type: ActivityType.Watching,
-        name: `${guilds.size} servers and ${totalMemberCount} ponies across Equestria!`
+        name: `${guilds.size} servers & ${totalMemberCount} ponies across Equestria!`
     })
 }
 
