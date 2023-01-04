@@ -26,7 +26,7 @@ export default {
         let msg = "";
         for (var i = 0; i < list.length; i++) {
             let listing = list[i];
-            msg += `**•** ${listing}\n`
+            msg += `**•** \`\`${listing}\`\`\n`
         }
 
         dmChannel.send({
