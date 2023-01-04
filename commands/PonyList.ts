@@ -14,7 +14,9 @@ export default {
         let list = Ponies.map((pony) => {
             return `* ${pony.name}`;
         })
-        await interaction.user.dmChannel.send({
+
+        let dmChannel = await interaction.user.createDM(true);
+        dmChannel.send({
             content: list.toString()
         })
     }
