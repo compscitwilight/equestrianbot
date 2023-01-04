@@ -11,6 +11,7 @@ import {
 } from "discord.js";
 import { client } from "../"
 import pckg from "../package.json";
+import { Ponies } from "../data/ponies.data";
 
 export function getStatsEmbed() {
     let statsEmbed = new EmbedBuilder({
@@ -30,6 +31,11 @@ export function getStatsEmbed() {
             {
                 name: "Version",
                 value: pckg.version,
+                inline: true
+            },
+            {
+                name: "Pony Record Count",
+                value: String(Ponies.length),
                 inline: true
             }
         ],
