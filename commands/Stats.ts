@@ -6,7 +6,8 @@ import {
     ButtonStyle,
     Interaction,
     EmbedBuilder,
-    AttachmentBuilder
+    AttachmentBuilder,
+    Colors
 } from "discord.js";
 import { client } from "../"
 import pckg from "../package.json";
@@ -14,6 +15,7 @@ import pckg from "../package.json";
 export function getStatsEmbed() {
     let statsEmbed = new EmbedBuilder({
         title: "EquestrianBot statistics",
+        color: Colors.Red,
         fields: [
             {
                 name: "Total Servers",
