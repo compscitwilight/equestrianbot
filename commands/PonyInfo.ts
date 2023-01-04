@@ -8,8 +8,8 @@ export default {
         .setName("ponyinfo")
         .setDescription("Returns an embed containing information about a pony being searched.")
         .addStringOption((option: SlashCommandStringOption) =>
-            option.setName("Pony")
-                .setDescription("The pony that you want information about. (NOTE: Not all characters are listed. Use </ponylist:0> to list all characters.")
+            option.setName("pony")
+                .setDescription("The pony that you want information about.\n(NOTE: Not all characters are listed. Use </ponylist:0> to list all characters.")
                 .setAutocomplete(true)
                 .setRequired(true)
         ),
@@ -29,7 +29,7 @@ export default {
     execute: (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
         let options = ((interaction as unknown) as AutocompleteInteraction).options;
-        let arg = options.getString("Pony");
+        let arg = options.getString("pony");
         if (!arg) return;
 
         let pony = getPony(arg);
