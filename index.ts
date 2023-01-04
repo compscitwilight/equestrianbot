@@ -4,7 +4,7 @@ import Command from "./Command";
 import Config from "./config.json";
 
 let commands = new Array<Command>();
-let client = new Client({
+export let client = new Client({
     intents: ["Guilds"]
 });
 
