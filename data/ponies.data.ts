@@ -184,6 +184,7 @@ var Ponies: Pony[] = [
     {
         name: "Applebloom",
         image: "https://static.wikia.nocookie.net/mlp/images/1/1c/Apple_Bloom_ID_S6E4.png/revision/latest?cb=20160411140505",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bfcb416-04c9-4936-bcb5-687b05dccd9e/d9djppu-50452335-af9d-4c65-919e-a52c8ecabf39.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiZmNiNDE2LTA0YzktNDkzNi1iY2I1LTY4N2IwNWRjY2Q5ZVwvZDlkanBwdS01MDQ1MjMzNS1hZjlkLTRjNjUtOTE5ZS1hNTJjOGVjYWJmMzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dYSf-E7eK5KBPhlq5mbdguGJQu_DRafV9YU4NIBEql8",
         description: "**Applebloom** is a school-age Earth pony who is the leader of the **Cutie Mark Crusaders**. She is the younger sister of Applejack and Big Mac, and lives on Sweet Apple Acres. She earned her cutie mark in \"Crusaders of the Lost Mark\" along with her friends Sweetie Belle and Scootaloo.",
         gen: Generation.G4,
         type: Species.Earth,
@@ -192,6 +193,7 @@ var Ponies: Pony[] = [
     {
         name: "Sweetie Belle",
         image: "https://static.miraheze.org/mylittleponywiki/e/e8/S8E6_Sweetie.png",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bfcb416-04c9-4936-bcb5-687b05dccd9e/d9djo9f-83829858-f23a-4731-95a1-43d8c588609c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiZmNiNDE2LTA0YzktNDkzNi1iY2I1LTY4N2IwNWRjY2Q5ZVwvZDlkam85Zi04MzgyOTg1OC1mMjNhLTQ3MzEtOTVhMS00M2Q4YzU4ODYwOWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GYTTYt_synsuPZ0Pox09mn2IyFBmaFfzv9Vjf-8nQ38",
         description: "**Sweetie Belle** is a school-age unicorn who is a member of the **Cutie Mark Crusaders**, and the younger sister of Rarity.",
         gen: Generation.G4,
         type: Species.Unicorn,
@@ -200,6 +202,7 @@ var Ponies: Pony[] = [
     {
         name: "Scootaloo",
         image: "https://static.wikia.nocookie.net/mlp/images/5/5a/Scootaloo_ID_S6E4.png/revision/latest?cb=20160411140522",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bfcb416-04c9-4936-bcb5-687b05dccd9e/d9djpz7-a5f71728-25f3-4182-a23c-9da53e1fd300.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiZmNiNDE2LTA0YzktNDkzNi1iY2I1LTY4N2IwNWRjY2Q5ZVwvZDlkanB6Ny1hNWY3MTcyOC0yNWYzLTQxODItYTIzYy05ZGE1M2UxZmQzMDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JHTstXhWZ9pBtUbw5oaARsyhiA-whborHBzEvzH1aHY",
         description: "**Scootaloo** is a school-age pegasus who is a member of the **Cutie Mark Crusaders**. She is a talented scooterist, and the younger sister figure of Rainbow Dash.",
         gen: Generation.G4,
         type: Species.Pegasus,
