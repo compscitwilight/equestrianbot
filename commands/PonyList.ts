@@ -17,7 +17,7 @@ export default {
 
         let dmChannel = await interaction.user.createDM(true);
         dmChannel.send({
-            content: list.toString().replace(",", "")
+            content: list.toString().replace(/,*/, "")
         })
     }
 } as Command
