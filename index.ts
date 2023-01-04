@@ -28,7 +28,8 @@ function updateStatusCount() {
 }
 
 client.on("ready", async () => {
-    console.log("EquestrianBot is now online.")
+    console.log("EquestrianBot is now online.");
+    updateStatusCount();
 
     const rest = new REST({version: "10"}).setToken(Config.token);
     console.log("Refreshing slash commands.");
