@@ -37,6 +37,7 @@ export default {
     },
     execute: async (interaction: Interaction) => {
         if (!interaction.isRepliable()) return;
+        if (interaction.channel.isDMBased()) return;
         let options = ((interaction as unknown) as AutocompleteInteraction).options;
         let arg = options.getString("pony");
         if (!arg) return;
