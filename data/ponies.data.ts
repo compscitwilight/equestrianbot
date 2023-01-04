@@ -332,6 +332,14 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.LightGrey
+    },
+    {
+        name: "King Sombra",
+        image: "https://static.wikia.nocookie.net/mlp/images/7/7b/King_Sombra_ID_S9E2.png/revision/latest?cb=20190411072142",
+        description: "**King Sombra** was a unicorn who gained notoriety from enslaving the Crystal Ponies of the Crysal Empire. He hid the Crystal Heart, and made the Crystal Empire completely vanish. When the Crystal Empire returned, King Sombra attempted to stop Twilight Sparkle and Spike from retrieving the Crystal Heart. He has the ability to use \"black magic\", a special type of magic.",
+        gen: Generation.G4,
+        type: Species.Unicorn,
+        color: Colors.DarkRed
     }
 ]
 
