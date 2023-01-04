@@ -43,7 +43,8 @@ export enum Species {
     Yak = "Yak",
     Zebra = "Zebra",
     Alligator = "Alligator",
-    Bunny = "Bunny"
+    Bunny = "Bunny",
+    Owl = "Owl"
 }
 
 export function getPony(name: string) {
@@ -307,6 +308,14 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.Green
+    },
+    {
+        name: "Owlowiscious",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/d8/Owlowiscious_id_S3E11.png/revision/latest?cb=20130128152325",
+        description: "**Owlowiscious** is an owl who first appears in the episode \"Owl's Well That Ends Well\". He becomes Twilight Sparkle's pet, and makes Spike fear that he may be replaced.",
+        gen: Generation.G4,
+        type: Species.Owl,
+        color: Colors.DarkOrange
     }
 ]
 
