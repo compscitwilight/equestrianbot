@@ -12,12 +12,12 @@ export default {
         interaction.reply("I've sent a list to your DMs.");
 
         let list = Ponies.map((pony) => {
-            return `* ${pony.name}`;
+            return `* ${pony.name}\n`;
         })
 
         let dmChannel = await interaction.user.createDM(true);
         dmChannel.send({
-            content: list.toString()
+            content: list.toString().replace(",", "")
         })
     }
 } as Command
