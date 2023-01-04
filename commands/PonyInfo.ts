@@ -34,7 +34,7 @@ export default {
 
         let pony = getPony(arg);
         if (!pony) {
-            interaction.reply({text: "Invalid pony", ephemeral: true});
+            interaction.reply({content: "Invalid pony", ephemeral: true});
             return;
         };
 
