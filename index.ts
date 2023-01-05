@@ -14,22 +14,10 @@ for (const cmd of readdirSync("./commands")) {
 }
 
 function updateStatusCount() {
-    let totalMemberCount = 0;
     let guilds = client.guilds.cache
-    for (var i = 0; i < guilds.size; i++) {
-        let guild = guilds.at(i);
-        let members = Object.values(guild.members.cache);
-        for (var m = 0; m < members.length; m++) {
-            let member = members.at(m);
-            if (!(member as GuildMember).user.bot)
-                totalMemberCount += 1;
-        }
-
-    }
-
     client.user.setActivity({
         type: ActivityType.Watching,
-        name: `${guilds.size} servers & ${totalMemberCount} ponies across Equestria!`
+        name: `${guilds.size} servers across Equestria!`
     })
 }
 
