@@ -1,4 +1,4 @@
-import { Client, ActivityType, Interaction, REST, Routes } from "discord.js";
+import { Client, ActivityType, Interaction, REST, Routes, User, GuildMember } from "discord.js";
 import { readdirSync } from "fs";
 import Command from "./Command";
 import Config from "./config.json";
@@ -18,10 +18,10 @@ function updateStatusCount() {
     let guilds = client.guilds.cache
     for (var i = 0; i < guilds.size; i++) {
         let guild = guilds.at(i);
-        let members = guild.members.cache;
-        for (var m = 0; m < members.size; m++) {
-            let member = Object.values(members)[m];
-            if (!member.user.bot)
+        let members = Object.values(guild.members.cache);
+        for (var m = 0; m < members.length; m++) {
+            let member = members.at(m);
+            if (!(member as GuildMember).user.bot)
                 totalMemberCount += 1;
         }
 
