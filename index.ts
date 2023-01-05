@@ -18,9 +18,7 @@ function updateStatusCount() {
     let guilds = client.guilds.cache
     for (var i = 0; i < guilds.size; i++) {
         let guild = guilds.at(i);
-        let members = guild.members.cache.filter((member) => {
-            return !member.user.bot;
-        })
+        let members = guild.members.cache.filter((member) => !member.user.bot);
         totalMemberCount += members.size;
     }
 
