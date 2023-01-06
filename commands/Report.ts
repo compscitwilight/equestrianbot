@@ -15,6 +15,7 @@ export default {
         .setDescription("Report bugs or suggest changes to the developer of the bot."),
     execute: async (interaction: Interaction) => {
         if (!interaction.isChatInputCommand()) return;
+        /*
         let modal = new ModalBuilder({
             customId: "report",
             title: "EquestrianBot Report"
@@ -41,7 +42,17 @@ export default {
                 style: TextInputStyle.Paragraph
             })
         )
+        */
 
-        interaction.showModal(modal);
+        interaction.showModal(new ModalBuilder({
+            customId: "joe",
+            components: [
+                new ActionRowBuilder<ModalActionRowComponentBuilder>().addComponents(
+                    new TextInputBuilder().setStyle(TextInputStyle.Paragraph).setPlaceholder("Joe")
+                )
+            ]
+        }))
+
+        //interaction.showModal(modal);
     }
 } as Command;
