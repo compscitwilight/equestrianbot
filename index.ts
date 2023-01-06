@@ -47,21 +47,13 @@ client.on("interactionCreate", async (interaction: Interaction) => {
         })
 
         await command.execute(interaction);
-    }
+
+        if (interaction.isAutocomplete()) {
+            let cmd = (command as Command);
+            if (!cmd.autocomplete) return;
     
-    if (!command) {
-        await interaction.reply({
-            content: "Invalid command.",
-            ephemeral: true
-        })
-        return
-    }
-
-    if (interaction.isAutocomplete()) {
-        let cmd = (command as Command);
-        if (!cmd.autocomplete) return;
-
-        await cmd.autocomplete(interaction);
+            await cmd.autocomplete(interaction);
+        }
     }
 })
 
