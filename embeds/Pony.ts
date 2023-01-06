@@ -31,5 +31,19 @@ export function CreatePonyEmbed(data: Pony) {
         embed.setThumbnail(data.cutieMark);
     }
 
+    if (data.firstAppeared) {
+        let date = "";
+        date += "S" + data.firstAppeared.season + " ";
+        if (data.firstAppeared.episode)
+            date += "E"+ data.firstAppeared.episode;
+        embed.addFields([
+            {
+                name: "First Appeared",
+                value: date,
+                inline: true
+            }
+        ])
+    }
+
     return embed;
 }
