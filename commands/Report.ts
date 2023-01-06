@@ -15,6 +15,11 @@ export default {
         .setDescription("Report bugs or suggest changes to the developer of the bot."),
     execute: async (interaction: Interaction) => {
         if (!interaction.isChatInputCommand()) return;
+        let modal = new ModalBuilder({
+            customId: "report",
+            title: "EquestrianBot Report"
+        });
+
         let subjectInput = new ActionRowBuilder<ModalActionRowComponentBuilder>().addComponents(
             new TextInputBuilder({
                 customId: "title",
@@ -37,12 +42,6 @@ export default {
             })
         )
 
-        let modal = new ModalBuilder({
-            customId: "report_modal",
-            title: "EquestrianBot Report",
-            components: [subjectInput, descriptionInput]
-        });
-
-        await interaction.showModal(modal);
+        interaction.showModal(modal);
     }
 } as Command;
