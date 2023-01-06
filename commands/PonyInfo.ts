@@ -10,6 +10,7 @@ import {
 import Command from "../Command"
 import { getPony, Ponies, getFormattedList } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
+import { sendDm } from "../utils/sendDm";
 
 export default {
     data: new SlashCommandBuilder()
@@ -60,8 +61,7 @@ export default {
         let collector = interaction.channel.createMessageComponentCollector();
         collector.on("collect", async () => {
             let list = getFormattedList();
-            let dms = await interaction.user.createDM(true);
-            dms.send(list);
+            sendDm(interaction, list);
         })
 
         let embed = CreatePonyEmbed(pony);
