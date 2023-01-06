@@ -51,6 +51,7 @@ export default {
         };
 
         let ponyListBtn = new ButtonBuilder({
+            customId: "ponylist",
             label: "Get Pony List",
             style: ButtonStyle.Secondary
         });
