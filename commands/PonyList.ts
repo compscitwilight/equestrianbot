@@ -1,6 +1,6 @@
 import Command from "../Command";
 import { Interaction, SlashCommandBuilder, PermissionFlagsBits } from "discord.js";
-import { Ponies } from "../data/ponies.data";
+import { Ponies, getFormattedList } from "../data/ponies.data";
 
 export default {
     data: new SlashCommandBuilder()
@@ -11,10 +11,6 @@ export default {
         if (!interaction.isRepliable()) return;
         interaction.reply("I've sent a list to your DMs.");
 
-        let list = Ponies.map((pony) => {
-            return `${pony.name}`;
-        })
-
         let dmChannel = await interaction.user.createDM(true);
         if (!dmChannel) {
             interaction.reply({
@@ -23,12 +19,7 @@ export default {
             return;
         }
 
-        let msg = "";
-        for (var i = 0; i < list.length; i++) {
-            let listing = list[i];
-            msg += `**•** \`\`${listing}\`\`\n`
-        }
-
+        let msg = getFormattedList();
         dmChannel.send({
             content: msg
         })

@@ -62,6 +62,18 @@ export function getPonyId(pony: Pony) {
     return index;
 }
 
+export function getFormattedList() {
+    let msg = "";
+    let list = Ponies.map((pony) => {
+        return `${pony.name}`;
+    })
+    for (var i = 0; i < list.length; i++) {
+        let listing = list[i];
+        msg += `**•** \`\`${listing}\`\`\n`
+    }
+    return msg;
+}
+
 var Ponies: Pony[] = [
     {
         honorificPrefix: "Princess",

@@ -8,15 +8,14 @@ import {
     ButtonStyle
 } from "discord.js";
 import Command from "../Command"
-import { getPony, Ponies } from "../data/ponies.data";
+import { getPony, Ponies, getFormattedList } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
-import RandomPony from "./RandomPony";
-import PonyList from "./PonyList";
 
 export default {
     data: new SlashCommandBuilder()
         .setName("ponyinfo")
         .setDescription("Returns an embed containing information about a pony being searched.")
+        .setDMPermission(true)
         .addStringOption((option: SlashCommandStringOption) =>
             option.setName("pony")
                 .setDescription("Use /ponylist to list all characters.")
@@ -59,8 +58,10 @@ export default {
             components: [ponyListBtn]
         });
         let collector = interaction.channel.createMessageComponentCollector();
-        collector.on("collect", () => {
-            PonyList.execute(interaction);
+        collector.on("collect", async () => {
+            let list = getFormattedList();
+            let dms = await interaction.user.createDM(true);
+            dms.send(list);
         })
 
         let embed = CreatePonyEmbed(pony);
