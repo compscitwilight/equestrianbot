@@ -11,6 +11,7 @@ import Command from "../Command"
 import { getPony, Ponies } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
 import RandomPony from "./RandomPony";
+import PonyList from "./PonyList";
 
 export default {
     data: new SlashCommandBuilder()
@@ -49,10 +50,23 @@ export default {
             return;
         };
 
+        let ponyListBtn = new ButtonBuilder({
+            label: "Get Pony List",
+            style: ButtonStyle.Secondary
+        });
+        let actionRow = new ActionRowBuilder<ButtonBuilder>({
+            components: [ponyListBtn]
+        });
+        let collector = interaction.channel.createMessageComponentCollector();
+        collector.on("collect", () => {
+            PonyList.execute(interaction);
+        })
+
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
             content: "Loaded!",
-            embeds: [embed]
+            embeds: [embed],
+            components: [actionRow]
         })
     }
 } as Command;
