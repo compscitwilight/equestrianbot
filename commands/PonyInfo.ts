@@ -63,17 +63,7 @@ export default {
         collector.on("collect", async () => {
             let list = getFormattedList();
             sendDm(interaction, {
-                content: list,
-                files: [
-                    {
-                        attachment: "./assets/enabling_dms_1.png",
-                        name: "1"
-                    },
-                    {
-                        attachment: "./assets/enabling_dms_2.png",
-                        name: "2"
-                    }
-                ]
+                content: list
             });
         })
         

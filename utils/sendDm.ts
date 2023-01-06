@@ -6,6 +6,16 @@ export async function sendDm(interaction: Interaction, msg: MessageCreateOptions
     function cannotDmResponse() {
         return {
             content: "Sorry, but I cannot DM you as your DMs seem to be private",
+            files: [
+                {
+                    attachment: "./assets/enabling_dms_1.png",
+                    name: "1"
+                },
+                {
+                    attachment: "./assets/enabling_dms_2.png",
+                    name: "2"
+                }
+            ],
             ephemeral: true
         }
     }
