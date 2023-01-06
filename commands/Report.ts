@@ -15,27 +15,27 @@ export default {
         .setDescription("Report bugs or suggest changes to the developer of the bot."),
     execute: async (interaction: Interaction) => {
         if (!interaction.isChatInputCommand()) return;
-        let subjectInput = new ActionRowBuilder<ModalActionRowComponentBuilder>({
-            components: [new TextInputBuilder({
+        let subjectInput = new ActionRowBuilder<ModalActionRowComponentBuilder>().addComponents(
+            new TextInputBuilder({
                 customId: "title",
                 placeholder: "Title (briefly describe your report)",
                 maxLength: 25,
                 minLength: 10,
                 required: true,
                 style: TextInputStyle.Short
-            })]
-        })
+            })
+        )
 
-        let descriptionInput = new ActionRowBuilder<ModalActionRowComponentBuilder>({
-            components: [new TextInputBuilder({
+        let descriptionInput = new ActionRowBuilder<ModalActionRowComponentBuilder>().addComponents(
+            new TextInputBuilder({
                 customId: "description",
                 placeholder: "Description of your report.",
                 maxLength: 1000,
                 minLength: 25,
                 required: true,
                 style: TextInputStyle.Paragraph
-            })]
-        })
+            })
+        )
 
         let modal = new ModalBuilder({
             customId: "report_modal",
