@@ -1,5 +1,5 @@
-import { Interaction } from "discord.js";
-export async function sendDm(interaction: Interaction, messageContent: string) {
+import { Interaction, MessageCreateOptions } from "discord.js";
+export async function sendDm(interaction: Interaction, msg: MessageCreateOptions) {
     if (!interaction.isRepliable()) return;
     let dmChannel = await interaction.user.createDM(true);
 
@@ -10,7 +10,7 @@ export async function sendDm(interaction: Interaction, messageContent: string) {
         }
     }
 
-    dmChannel.send(messageContent).catch(() => {
+    dmChannel.send(msg).catch(() => {
         let response = cannotDmResponse();
         if (interaction.replied) {
             interaction.followUp(response);

@@ -5,7 +5,8 @@ import {
     SlashCommandStringOption,
     ActionRowBuilder,
     ButtonBuilder,
-    ButtonStyle
+    ButtonStyle,
+    AttachmentBuilder
 } from "discord.js";
 import Command from "../Command"
 import { getPony, Ponies, getFormattedList } from "../data/ponies.data";
@@ -61,9 +62,21 @@ export default {
         let collector = interaction.channel.createMessageComponentCollector();
         collector.on("collect", async () => {
             let list = getFormattedList();
-            sendDm(interaction, list);
+            sendDm(interaction, {
+                content: list,
+                files: [
+                    {
+                        attachment: "./assets/enabling_dms_1.png",
+                        name: "1"
+                    },
+                    {
+                        attachment: "./assets/enabling_dms_2.png",
+                        name: "2"
+                    }
+                ]
+            });
         })
-
+        
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
             content: "Loaded!",
