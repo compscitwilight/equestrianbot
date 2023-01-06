@@ -49,25 +49,10 @@ export default {
             return;
         };
 
-        let button = new ButtonBuilder({
-            customId: "primary",
-            label: "Get a random pony",
-            style: ButtonStyle.Success
-        });
-        let row = new ActionRowBuilder<ButtonBuilder>({
-            components: [button]
-        });
-
-        let collector = interaction.channel.createMessageComponentCollector();
-        collector.on("collect", (interaction) => {
-            RandomPony.execute(interaction);
-        })
-
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
             content: "Loaded!",
-            embeds: [embed],
-            components: [row]
+            embeds: [embed]
         })
     }
 } as Command;
