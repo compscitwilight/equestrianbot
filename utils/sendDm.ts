@@ -5,7 +5,7 @@ export async function sendDm(interaction: Interaction, msg: MessageCreateOptions
 
     function cannotDmResponse() {
         return {
-            content: "Sorry, but I cannot DM you as your DMs seem to be private\nhttps://cdn.discordapp.com/attachments/1041019407318663241/1061054600767090840/enabling_dms_1.png\nhttps://cdn.discordapp.com/attachments/1041019407318663241/1061054601169747988/enabling_dms_2.png",
+            content: "Sorry, but I cannot DM you as your DMs seem to be private\nHere's how you can enable your DMs\nhttps://cdn.discordapp.com/attachments/1041019407318663241/1061054600767090840/enabling_dms_1.png\nhttps://cdn.discordapp.com/attachments/1041019407318663241/1061054601169747988/enabling_dms_2.png",
             ephemeral: true
         }
     }
