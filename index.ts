@@ -31,7 +31,8 @@ client.on("ready", async () => {
         Routes.applicationCommands(Config.clientId),
         { body: commands.map((c: Command) => {
             console.log(c);
-            return c.data;
+            if (!c.disabled)
+                return c.data;
         }) }
     );
     console.log("Successfully loaded commands.");
