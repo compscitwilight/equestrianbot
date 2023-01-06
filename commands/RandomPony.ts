@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, Interaction, ActionRowBuilder, ButtonBuilder, ButtonStyle } from "discord.js";
+import { SlashCommandBuilder, Interaction, ActionRowBuilder, ButtonBuilder, ButtonStyle, ButtonInteraction } from "discord.js";
 import { CreatePonyEmbed } from "../embeds/Pony";
 import { Ponies } from "../data/ponies.data";
 import Command from "../Command";
@@ -25,14 +25,16 @@ export default {
             components: [repeatButton]
         });
         let collector = interaction.channel.createMessageComponentCollector();
-        collector.on("collect", async () => {
+        collector.on("collect", async (collectorInteraction: ButtonInteraction) => {
+            if (!collectorInteraction.isButton()) return;
             let embed = getRandomPonyEmbed();
             await interaction.followUp({
                 content: "🎲 RandomPony!",
                 embeds: [embed],
                 components: [row]
             })
-            collector.stop("You have already requested another random pony.");
+            repeatButton.setDisabled(true);
+            collector.stop();
         })
 
         let embed = getRandomPonyEmbed();
