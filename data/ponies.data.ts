@@ -175,7 +175,11 @@ var Ponies: Pony[] = [
         description: "**Princess Cadance** is an Alicorn who is the Princess of the Crystal Empire, alongside Prince Shining Armor. She is the former foal-sitter of Princess Twilight Sparkle, the wife of her brother, and her sister-in-law. She is in charge of maintaining the defense of the Crystal Empire by using her magic.",
         gen: Generation.G4,
         type: Species.Alicorn,
-        color: Colors.DarkVividPink
+        color: Colors.DarkVividPink,
+        firstAppeared: {
+            season: 2,
+            episode: 25
+        }
     },
     {
         name: "Prince Shining Armor",
@@ -183,7 +187,11 @@ var Ponies: Pony[] = [
         description: "**Prince Shining Armor** is a unicorn who is the older brother of Princess Twilight Sparkle, and the husband of Princess Cadance. He, alongside Princess Cadance rule the Crystal Empire and protect it with their magic.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.DarkBlue
+        color: Colors.DarkBlue,
+        firstAppeared: {
+            season: 2,
+            episode: 25
+        }
     },
     {
         name: "Princess Flurryheart",
@@ -191,7 +199,11 @@ var Ponies: Pony[] = [
         description: "**Princess Flurryheart** is an alicorn-born princess. She was the first ever pony in recorded history to be born an alicorn. Her parents are Princess Cadance and Prince Shining Armor, and her aunt is Princess Twilight Sparkle.",
         gen: Generation.G4,
         type: Species.Alicorn,
-        color: Colors.LuminousVividPink
+        color: Colors.LuminousVividPink,
+        firstAppeared: {
+            season: 6,
+            episode: 1
+        }
     },
     {
         name: "Queen Chrysalis",
@@ -199,7 +211,11 @@ var Ponies: Pony[] = [
         description: "**Queen Chrysalis** is a changeling villian who formerly ruled the Changeling Kingdom. She disguised herself as Princess Cadance when her and Shining Armor were about to marry each other. She is one of the only changelings to remain evil after \"To Change a Changeling\".",
         gen: Generation.G4,
         type: Species.Changeling,
-        color: Colors.DarkButNotBlack
+        color: Colors.DarkButNotBlack,
+        firstAppeared: {
+            season: 2,
+            episode: 26
+        }
     },
     {
         name: "Spike",
@@ -207,7 +223,11 @@ var Ponies: Pony[] = [
         description: "**Spike** is a dragon who acts as the companion of Princess Twilight Sparkle, naming him her \"Number One Assistant\". He usually partakes in acitivies with the rest of the Mane Six, and even has his own throne in the throne room at Twilight Sparkle's castle.",
         gen: Generation.G4,
         type: Species.Dragon,
-        color: Colors.Purple
+        color: Colors.Purple,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Discord",
@@ -215,7 +235,11 @@ var Ponies: Pony[] = [
         description: "**Discord** is a draconequus who formerly used his magic to convert Equestria into the \"Chaos Capital of the World\". He was turned to stone by the regal sisters over 1,000 years ago, but came back after the Cutie Mark Crusaders had an argument near his statue. Afterwards, the Mane 6 defeated him with the Elements of Harmony, and in \"Keep Calm and Flutter On\", Discord was reformed by Fluttershy. He is the only creature in Equestria to hold \"chaos magic\".",
         gen: Generation.G4,
         type: Species.Draconequus,
-        color: Colors.DarkOrange
+        color: Colors.DarkOrange,
+        firstAppeared: {
+            season: 2,
+            episode: 1
+        }
     },
     {
         name: "Applebloom",
@@ -224,7 +248,11 @@ var Ponies: Pony[] = [
         description: "**Applebloom** is a school-age Earth pony who is the leader of the **Cutie Mark Crusaders**. She is the younger sister of Applejack and Big Mac, and lives on Sweet Apple Acres. She earned her cutie mark in \"Crusaders of the Lost Mark\" along with her friends Sweetie Belle and Scootaloo.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Red
+        color: Colors.Red,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Sweetie Belle",
@@ -233,7 +261,11 @@ var Ponies: Pony[] = [
         description: "**Sweetie Belle** is a school-age unicorn who is a member of the **Cutie Mark Crusaders**, and the younger sister of Rarity.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.White
+        color: Colors.White,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Scootaloo",
@@ -242,7 +274,11 @@ var Ponies: Pony[] = [
         description: "**Scootaloo** is a school-age pegasus who is a member of the **Cutie Mark Crusaders**. She is a talented scooterist, and the younger sister figure of Rainbow Dash.",
         gen: Generation.G4,
         type: Species.Pegasus,
-        color: Colors.Orange
+        color: Colors.Orange,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Babs Seed",
@@ -250,7 +286,11 @@ var Ponies: Pony[] = [
         description: "**Babs Seed** is a school-age earth pony who is a former member of the **Cutie Mark Crusaders**, and the cousin of Applebloom. She became a bully when she visited Ponyville, but changed herself after the Cutie Mark Crusaders saved her from crashing her float into mud.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.DarkOrange
+        color: Colors.DarkOrange,
+        firstAppeared: {
+            season: 3,
+            episode: 4
+        }
     },
     {
         name: "Trixie Lulamoon",
@@ -258,7 +298,11 @@ var Ponies: Pony[] = [
         description: "\"The Great and Powerful\" **Trixie Lulamoon** is a unicorn who performs magic tricks across Equestria. She is friends with Starlight Glimmer, who is Princess Twilight Sparkle's student.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.DarkPurple
+        color: Colors.DarkPurple,
+        firstAppeared: {
+            season: 1,
+            episode: 6
+        }
     },
     {
         name: "Starlight Glimmer",
@@ -266,7 +310,11 @@ var Ponies: Pony[] = [
         description: "**Starlight Glimmer** is a unicorn who is the student of Princess Twilight Sparkle. She is a former villian who lead a village where she removed the cutie marks of ponies who visited, and even time travelled to try and stop Rainbow Dash from performing her Sonic Rainboom which gave the rest of the Mane 6 their cutie marks.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.Purple
+        color: Colors.Purple,
+        firstAppeared: {
+            season: 5,
+            episode: 1
+        }
     },
     {
         name: "Prince Rutherford",
@@ -274,7 +322,11 @@ var Ponies: Pony[] = [
         description: "**Prince Rutherford** is a yak who is the leader of Yakyakistan. He is friends with Pinkie Pie, who is the \"Official Friendship Ambassador for the Yaks\".",
         gen: Generation.G4,
         type: Species.Yak,
-        color: Colors.DarkOrange
+        color: Colors.DarkOrange,
+        firstAppeared: {
+            season: 5,
+            episode: 11
+        }
     },
     {
         name: "Yona",
