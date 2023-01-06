@@ -13,6 +13,7 @@ export default {
     data: new SlashCommandBuilder()
         .setName("report")
         .setDescription("Report bugs or suggest changes to the developer of the bot."),
+    disabled: true,
     execute: async (interaction: Interaction) => {
         if (!interaction.isChatInputCommand()) return;
         /*
