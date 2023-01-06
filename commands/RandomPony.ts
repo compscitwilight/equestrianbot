@@ -30,11 +30,9 @@ export default {
             let embed = getRandomPonyEmbed();
             await interaction.followUp({
                 content: "🎲 RandomPony!",
-                embeds: [embed],
-                components: [row]
+                embeds: [embed]
             })
             repeatButton.setDisabled(true);
-            collector.stop();
         })
 
         let embed = getRandomPonyEmbed();
