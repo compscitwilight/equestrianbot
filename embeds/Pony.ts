@@ -20,7 +20,7 @@ export function CreatePonyEmbed(data: Pony) {
         ],
         footer: {
             text: "DISCLAIMER: EquestrianBot does not own any of the images that are used.",
-            iconURL: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/My_Little_Pony_Friendship_Is_Magic_logo_-_2017.svg/800px-My_Little_Pony_Friendship_Is_Magic_logo_-_2017.svg.png"
+            iconURL: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/My_Little_Pony_G4_logo.svg/1024px-My_Little_Pony_G4_logo.svg.png"
         }
     })
 
