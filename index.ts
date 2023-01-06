@@ -31,33 +31,37 @@ client.on("ready", async () => {
         Routes.applicationCommands(Config.clientId),
         { body: commands.map((c: Command) => {
             console.log(c);
-            if (!c.disabled)
-                return c.data;
+            return c.data;
         }) }
     );
     console.log("Successfully loaded commands.");
 })
 
 client.on("interactionCreate", async (interaction: Interaction) => {
-    if (interaction.isChatInputCommand()) {
-        let command = commands.find((c: Command) => {
-            return c.data.name == interaction.commandName;
-        });
+    if (!interaction.isRepliable()) return;
 
-        await (command as Command).execute(interaction);
-        return;
+    let command: Command;
+    if (interaction.isChatInputCommand()) {
+        command = commands.find((c: Command) => {
+            return c.data.name == interaction.commandName;
+        })
+
+        await command.execute(interaction);
+    }
+    
+    if (!command) {
+        await interaction.reply({
+            content: "Invalid command.",
+            ephemeral: true
+        })
+        return
     }
 
     if (interaction.isAutocomplete()) {
-        let command = commands.find((c: Command) => {
-            return c.data.name == interaction.commandName;
-        });
-
         let cmd = (command as Command);
         if (!cmd.autocomplete) return;
 
         await cmd.autocomplete(interaction);
-        return;
     }
 })
 
