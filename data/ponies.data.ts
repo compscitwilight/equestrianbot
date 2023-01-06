@@ -11,7 +11,11 @@ export interface Pony {
     cutieMark?: string,
     gen: Generation,
     type: Species,
-    color: number
+    color: number,
+    firstAppeared?: {
+        season: number,
+        episode?: number
+    }
 }
 
 export enum Generation {
