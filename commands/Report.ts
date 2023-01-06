@@ -17,7 +17,8 @@ export default {
         if (!interaction.isChatInputCommand()) return;
         let subjectInput = new ActionRowBuilder<ModalActionRowComponentBuilder>({
             components: [new TextInputBuilder({
-                placeholder: "Subject (briefly describe your report)",
+                customId: "title",
+                placeholder: "Title (briefly describe your report)",
                 maxLength: 25,
                 minLength: 10,
                 required: true,
@@ -27,6 +28,7 @@ export default {
 
         let descriptionInput = new ActionRowBuilder<ModalActionRowComponentBuilder>({
             components: [new TextInputBuilder({
+                customId: "description",
                 placeholder: "Description of your report.",
                 maxLength: 1000,
                 minLength: 25,
