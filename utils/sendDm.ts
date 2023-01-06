@@ -10,7 +10,7 @@ export async function sendDm(interaction: Interaction, messageContent: string) {
         }
     }
 
-    if (!dmChannel) {
+    dmChannel.send(messageContent).catch(() => {
         let response = cannotDmResponse();
         if (interaction.replied) {
             interaction.followUp(response);
@@ -18,7 +18,5 @@ export async function sendDm(interaction: Interaction, messageContent: string) {
         }
         interaction.reply(response);
         return;
-    }
-
-    dmChannel.send(messageContent);
+    });
 }
