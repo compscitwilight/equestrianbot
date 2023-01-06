@@ -33,9 +33,9 @@ export function CreatePonyEmbed(data: Pony) {
 
     if (data.firstAppeared) {
         let date = "";
-        date += "S" + data.firstAppeared.season + " ";
+        date += "Season " + data.firstAppeared.season + " ";
         if (data.firstAppeared.episode)
-            date += "E"+ data.firstAppeared.episode;
+            date += "Episode "+ data.firstAppeared.episode;
         embed.addFields([
             {
                 name: "First Appeared",
