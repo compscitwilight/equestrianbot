@@ -63,7 +63,7 @@ var Ponies: Pony[] = [
         honorificPrefix: "Princess",
         name: "Twilight Sparkle",
         image: "https://upload.wikimedia.org/wikipedia/en/b/b4/PrincessTwilightSparkle.png",
-        cutieMark: "https://i.pinimg.com/originals/f0/c8/92/f0c89287f948548ee67a632a86b41de3.png",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b67ac3f-1e49-4de0-a78f-eb1df5f41b6a/d3e1hyn-9f8b065f-d94c-4a70-8329-c5af4812e38f.png/v1/fill/w_1280,h_1643,strp/twilight_sparkle_cutie_mark_by_blackgryph0n_d3e1hyn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY0MyIsInBhdGgiOiJcL2ZcLzZiNjdhYzNmLTFlNDktNGRlMC1hNzhmLWViMWRmNWY0MWI2YVwvZDNlMWh5bi05ZjhiMDY1Zi1kOTRjLTRhNzAtODMyOS1jNWFmNDgxMmUzOGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hesj3n0-So8y1SEuJaTJlyZyu4d3Y8Ij8Nzm-BRfWrQ",
         description: "Princess **Twilight Sparkle** is an Alicorn who resides in Ponyville. She is the Princess of Friendship (Season 4-9), and became the Ruler of Equestria in \"The Last Problem\". She is depicted as a studious pony who loves magic. Her cutie mark resembles Magic, and her Element of Harmony also resembles Magic.",
         gen: Generation.G4,
         type: Species.Alicorn,
@@ -81,7 +81,7 @@ var Ponies: Pony[] = [
     {
         name: "Fluttershy",
         image: "https://static.wikia.nocookie.net/mlp/images/d/d6/Fluttershy_ID_S1E17.png/revision/latest?cb=20190410214903",
-        cutieMark: "https://i.pinimg.com/originals/bc/89/7b/bc897b2d5ec694ee13a987b5ced101f7.png",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b67ac3f-1e49-4de0-a78f-eb1df5f41b6a/d3e1hgq-c5679a9a-d108-4453-9d70-1af9dacb561f.png/v1/fill/w_1280,h_1305,strp/fluttershy_cutie_mark_by_blackgryph0n_d3e1hgq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMwNSIsInBhdGgiOiJcL2ZcLzZiNjdhYzNmLTFlNDktNGRlMC1hNzhmLWViMWRmNWY0MWI2YVwvZDNlMWhncS1jNTY3OWE5YS1kMTA4LTQ0NTMtOWQ3MC0xYWY5ZGFjYjU2MWYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oZ0URoJC2eWLDB3mtRNvekbn41uFlbE0e8NjogXAhDE",
         description: "**Fluttershy** is a yellow pegasus who represents the Element of Kindness. She is part of the Mane 6 and is usually portrayed as a shy and introverted pony. She has a special ability to communicate with other animals, and reformed Discord in \"Keep Calm and Flutter On\". She has the ability to do \"the Stare\", which allows her to intimidate animals.",
         gen: Generation.G4,
         type: Species.Pegasus,
@@ -99,7 +99,7 @@ var Ponies: Pony[] = [
     {
         name: "Rarity",
         image: "https://i.pinimg.com/736x/70/3b/be/703bbe46a2fdea09f5f949d25f6c9001--pony-style-girly-stuff.jpg",
-        cutieMark: "https://i.pinimg.com/736x/37/0c/2b/370c2b8d28327e679f1bbb097e68ec44.jpg",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3ecdd2e-6920-412d-8232-f8197a6ae700/d50y9ko-adfcdef0-974e-4457-95c8-0ab60d5ea1ec.png/v1/fill/w_900,h_1750,strp/rarity_cutie_mark_vector_by_uxyd_d50y9ko-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc1MCIsInBhdGgiOiJcL2ZcL2MzZWNkZDJlLTY5MjAtNDEyZC04MjMyLWY4MTk3YTZhZTcwMFwvZDUweTlrby1hZGZjZGVmMC05NzRlLTQ0NTctOTVjOC0wYWI2MGQ1ZWExZWMucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3r8vo-6uW-KASpABXidBywnJJWxG4Dv28K_PzyhH-vw",
         description: "**Rarity** is a unicorn who represents the Element of Generosity. She is part of the Mane 6 and is portrayed as an overdramatic fashionista. She owns a boutique in Canterlot, and is famous across Equestria for her fashion.",
         gen: Generation.G4,
         type: Species.Unicorn,
@@ -108,7 +108,7 @@ var Ponies: Pony[] = [
     {
         name: "Applejack",
         image: "https://1.bp.blogspot.com/-1gaCoMUcaGU/XoJHyMI9zSI/AAAAAAADVaM/mPQrY7r35O4_6WkHRAbTm4aLmjrSlsVSwCLcBGAsYHQ/s1600/large.png",
-        cutieMark: "https://i.pinimg.com/originals/88/de/85/88de85d64f67cad89ff0f1f1fe4b7b0e.jpg",
+        cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b67ac3f-1e49-4de0-a78f-eb1df5f41b6a/d3e1gqn-582033ba-461a-401f-8f59-05ed169c539e.png/v1/fill/w_1280,h_1374,strp/applejack_cutie_mark_by_blackgryph0n_d3e1gqn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM3NCIsInBhdGgiOiJcL2ZcLzZiNjdhYzNmLTFlNDktNGRlMC1hNzhmLWViMWRmNWY0MWI2YVwvZDNlMWdxbi01ODIwMzNiYS00NjFhLTQwMWYtOGY1OS0wNWVkMTY5YzUzOWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.k1R2ILHF2zVR4Kx-HUd4Xq0ihKiuOSMSDwCGif_MmV8",
         description: "**Applejack** is an Earth pony who represents the Element of Honesty. She is a member of the Mane 6, and the Apple Family. She works on Sweet Apple Acres with her younger sister Applebloom, her older brother Big Mac, and her grandmother Granny Smith. She is portrayed as a wise cowgirl.",
         gen: Generation.G4,
         type: Species.Earth,
