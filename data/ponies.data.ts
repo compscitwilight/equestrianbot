@@ -723,6 +723,18 @@ var Ponies: Pony[] = [
         gen: Generation.G4,
         type: Species.Earth,
         color: Colors.Green
+    },
+    {
+        name: "Thorax",
+        image: "https://static.wikia.nocookie.net/mlp/images/c/c1/Thorax_new_form_ID_S6E26.png/revision/latest?cb=20161024191324",
+        description: "**King Thorax** is a changeling who helped reform the Changeling Kingdom with Starlight Glimmer and Discord. Thorax believed at a young age that changelings shouldn't feed off of other's loves, and eventually disguised himself as a pony in the Crystal Empire to attempt to gain a good reputation. He was eventually caught, but proved himself worthy. Later on, he would assist Discord and Starlight Glimmer in overthrowing Queen Chrysalis after the Mane 6 went missing.",
+        gen: Generation.G4,
+        type: Species.Changeling,
+        color: Colors.Green,
+        firstAppeared: {
+            season: 6,
+            episode: 2
+        }
     }
 ]
 
