@@ -107,7 +107,7 @@ var Ponies: Pony[] = [
     },
     {
         name: "Applejack",
-        image: "https://1.bp.blogspot.com/-1gaCoMUcaGU/XoJHyMI9zSI/AAAAAAADVaM/mPQrY7r35O4_6WkHRAbTm4aLmjrSlsVSwCLcBGAsYHQ/s1600/large.png",
+        image: "https://static.wikia.nocookie.net/mlp/images/d/d8/Applejack_S01E13_cropped.png/revision/latest?cb=20130419182236",
         cutieMark: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b67ac3f-1e49-4de0-a78f-eb1df5f41b6a/d3e1gqn-582033ba-461a-401f-8f59-05ed169c539e.png/v1/fill/w_1280,h_1374,strp/applejack_cutie_mark_by_blackgryph0n_d3e1gqn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM3NCIsInBhdGgiOiJcL2ZcLzZiNjdhYzNmLTFlNDktNGRlMC1hNzhmLWViMWRmNWY0MWI2YVwvZDNlMWdxbi01ODIwMzNiYS00NjFhLTQwMWYtOGY1OS0wNWVkMTY5YzUzOWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.k1R2ILHF2zVR4Kx-HUd4Xq0ihKiuOSMSDwCGif_MmV8",
         description: "**Applejack** is an Earth pony who represents the Element of Honesty. She is a member of the Mane 6, and the Apple Family. She works on Sweet Apple Acres with her younger sister Applebloom, her older brother Big Mac, and her grandmother Granny Smith. She is portrayed as a wise cowgirl.",
         gen: Generation.G4,
