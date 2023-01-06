@@ -71,7 +71,11 @@ var Ponies: Pony[] = [
         description: "Princess **Twilight Sparkle** is an Alicorn who resides in Ponyville. She is the Princess of Friendship (Season 4-9), and became the Ruler of Equestria in \"The Last Problem\". She is depicted as a studious pony who loves magic. Her cutie mark resembles Magic, and her Element of Harmony also resembles Magic.",
         gen: Generation.G4,
         type: Species.Alicorn,
-        color: Colors.Purple
+        color: Colors.Purple,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Pinkie Pie",
@@ -80,7 +84,11 @@ var Ponies: Pony[] = [
         description: "**Pinkie Pie** is an Earth Pony who is part of the Mane 6, and represents the Element of Laughter. She is a pink and cheerful pony who loves to plan and throw parties. She is seen as a naive pony, but has been proven to actually be very intelligent, and possibly supernatural due to her future telling ability called \"Pinkie Sense\".",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.LuminousVividPink
+        color: Colors.LuminousVividPink,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Fluttershy",
@@ -89,7 +97,11 @@ var Ponies: Pony[] = [
         description: "**Fluttershy** is a yellow pegasus who represents the Element of Kindness. She is part of the Mane 6 and is usually portrayed as a shy and introverted pony. She has a special ability to communicate with other animals, and reformed Discord in \"Keep Calm and Flutter On\". She has the ability to do \"the Stare\", which allows her to intimidate animals.",
         gen: Generation.G4,
         type: Species.Pegasus,
-        color: Colors.Yellow
+        color: Colors.Yellow,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Rainbow Dash",
@@ -98,7 +110,11 @@ var Ponies: Pony[] = [
         description: "**Rainbow Dash** is a blue pegasus who represents the Element of Loyalty. She is a member of the Mane 6, and the Wonderbolts. She is an egotistical, competitve, and loyal pegasus, and even has her own fanclub ran by Scootaloo. She is one of the most iconic pegasi in My Little Pony.",
         gen: Generation.G4,
         type: Species.Pegasus,
-        color: Colors.Blue
+        color: Colors.Blue,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Rarity",
@@ -107,7 +123,11 @@ var Ponies: Pony[] = [
         description: "**Rarity** is a unicorn who represents the Element of Generosity. She is part of the Mane 6 and is portrayed as an overdramatic fashionista. She owns a boutique in Canterlot, and is famous across Equestria for her fashion.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.White
+        color: Colors.White,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Applejack",
@@ -116,7 +136,11 @@ var Ponies: Pony[] = [
         description: "**Applejack** is an Earth pony who represents the Element of Honesty. She is a member of the Mane 6, and the Apple Family. She works on Sweet Apple Acres with her younger sister Applebloom, her older brother Big Mac, and her grandmother Granny Smith. She is portrayed as a wise cowgirl.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Orange
+        color: Colors.Orange,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Princess Celestia",
@@ -125,7 +149,11 @@ var Ponies: Pony[] = [
         description: "**Princess Celestia** is one of the regal sisters of Equestria. Alongside her sister Princess Luna, she is in charge of rising the sun, maintaining peace in Equestria, and mentoring Twilight Sparkle. She is one of the most famous ponies in all of Equestrian history. She and her sister defeated Discord using the Elements of Harmony when he first gained control of Equestria.",
         gen: Generation.G4,
         type: Species.Alicorn,
-        color: Colors.Yellow
+        color: Colors.Yellow,
+        firstAppeared: {
+            season: 1,
+            episode: 2
+        }
     },
     {
         name: "Princess Luna",
@@ -134,7 +162,11 @@ var Ponies: Pony[] = [
         description: "**Princess Luna** is one of the regal sisters of Equestria. Alongside her sister Princess Celestia, she is in charge of rising the moon, and helping ponies in their dreams. Princess Luna was banished to the moon after turning into **Nightmare Moon** over 1,000 years ago by her sister using the Elements of Harmony. Nightmare Moon was defeated in the My Little Pony: Friendship is Magic premiere by the Mane 6.",
         gen: Generation.G4,
         type: Species.Alicorn,
-        color: Colors.DarkPurple
+        color: Colors.DarkPurple,
+        firstAppeared: {
+            season: 1,
+            episode: 2
+        }
     },
     {
         name: "Princess Cadance",
