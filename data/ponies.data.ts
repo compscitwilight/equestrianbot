@@ -15,6 +15,11 @@ export interface Pony {
     firstAppeared?: {
         season: number,
         episode?: number
+    },
+    magic?: {
+        auraColor: string,
+        type?: Magic,
+        magicImage?: string
     }
 }
 
@@ -51,6 +56,13 @@ export enum Species {
     Bunny = "Bunny",
     Owl = "Owl",
     Tortoise = "Tortoise"
+}
+
+export enum Magic {
+    Unicorn = "Unicorn",
+    Alicorn = "Alicorn",
+    Black = "Black",
+    Chaos = "Chaos"
 }
 
 export function getPony(name: string) {
