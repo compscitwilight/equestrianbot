@@ -60,7 +60,7 @@ export default {
             components: [ponyListBtn]
         });
 
-        if (pony.magic.magicImage) {
+        if (pony.magic && pony.magic.magicImage) {
             actionRow.addComponents([
                 new ButtonBuilder({
                     customId: "usemagic",
@@ -86,7 +86,6 @@ export default {
                     });
                     break;
                 case "usemagic":
-                    if (!pony.magic) return;
                     embed.setTitle("Twilight Sparkle - Using magic");
                     embed.setImage(pony.magic.magicImage);
                     actionRow.components[1].data.disabled = true;
