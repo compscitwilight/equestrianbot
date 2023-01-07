@@ -39,6 +39,10 @@ client.on("ready", async () => {
 
 client.on("interactionCreate", async (interaction: Interaction) => {
     if (!interaction.isRepliable()) return;
+    if (interaction.isButton()) {
+        interaction.deferUpdate();
+        return;
+    };
 
     let command: Command;
     if (interaction.isChatInputCommand()) {
