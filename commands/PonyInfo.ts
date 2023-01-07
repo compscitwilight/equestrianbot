@@ -72,7 +72,6 @@ export default {
         
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
-            content: "Loaded!",
             embeds: [embed],
             components: [actionRow]
         })
@@ -94,9 +93,8 @@ export default {
                         embeds: [embed],
                         components: [actionRow]
                     });
-                    break
+                    break;
             }
-
         })
     }
 } as Command;
