@@ -59,6 +59,17 @@ export default {
         let actionRow = new ActionRowBuilder<ButtonBuilder>({
             components: [ponyListBtn]
         });
+
+        if (pony.magic) {
+            actionRow.addComponents([
+                new ButtonBuilder({
+                    customId: "usemagic",
+                    label: "Use magic",
+                    style: ButtonStyle.Success
+                })
+            ])
+        }
+
         let collector = interaction.channel.createMessageComponentCollector();
         collector.on("collect", async () => {
             let list = getFormattedList();
