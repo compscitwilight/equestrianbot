@@ -6,10 +6,10 @@ import {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
-    AttachmentBuilder
+    ButtonInteraction,
 } from "discord.js";
 import Command from "../Command"
-import { getPony, Ponies, getFormattedList } from "../data/ponies.data";
+import { getPony, Ponies, getFormattedList, Magic } from "../data/ponies.data";
 import { CreatePonyEmbed } from "../embeds/Pony";
 import { sendDm } from "../utils/sendDm";
 
@@ -60,7 +60,7 @@ export default {
             components: [ponyListBtn]
         });
 
-        if (pony.magic) {
+        if (pony.magic.magicImage) {
             actionRow.addComponents([
                 new ButtonBuilder({
                     customId: "usemagic",
@@ -69,20 +69,33 @@ export default {
                 })
             ])
         }
-
-        let collector = interaction.channel.createMessageComponentCollector();
-        collector.on("collect", async () => {
-            let list = getFormattedList();
-            sendDm(interaction, {
-                content: list
-            });
-        })
         
         let embed = CreatePonyEmbed(pony);
         await interaction.reply({
             content: "Loaded!",
             embeds: [embed],
             components: [actionRow]
+        })
+
+        let collector = interaction.channel.createMessageComponentCollector();
+        collector.on("collect", async (button: ButtonInteraction) => {
+            switch (button.customId) {
+                case "ponylist":
+                    let list = getFormattedList();
+                    sendDm(interaction, {
+                        content: list
+                    });
+                    break;
+                case "usemagic":
+                    embed.setTitle("Twilight Sparkle - Using magic");
+                    embed.setImage(pony.magic.magicImage);
+                    interaction.editReply({
+                        embeds: [embed],
+                        components: [actionRow]
+                    });
+                    break
+            }
+
         })
     }
 } as Command;
