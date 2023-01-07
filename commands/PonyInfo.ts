@@ -86,6 +86,7 @@ export default {
                     });
                     break;
                 case "usemagic":
+                    if (!pony.magic) return;
                     embed.setTitle("Twilight Sparkle - Using magic");
                     embed.setImage(pony.magic.magicImage);
                     actionRow.components[1].data.disabled = true;
