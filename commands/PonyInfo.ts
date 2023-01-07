@@ -89,6 +89,7 @@ export default {
                 case "usemagic":
                     embed.setTitle("Twilight Sparkle - Using magic");
                     embed.setImage(pony.magic.magicImage);
+                    actionRow.components[1].data.disabled = true;
                     interaction.editReply({
                         embeds: [embed],
                         components: [actionRow]
