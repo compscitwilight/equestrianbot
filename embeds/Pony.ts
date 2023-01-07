@@ -50,7 +50,7 @@ export function CreatePonyEmbed(data: Pony) {
     let magic = data.magic;
     if (data.magic) {
         let magicData = "";
-        magicData += magic.auraColor + "\n";
+        magicData += "`#" + magic.auraColor + "`\n";
         if (magic.type)
             magicData += magic.type;
 
