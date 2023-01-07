@@ -32,15 +32,32 @@ export function CreatePonyEmbed(data: Pony) {
         embed.setThumbnail(data.cutieMark);
     }
 
-    if (data.firstAppeared) {
+    let firstAppeared = data.firstAppeared;
+    if (firstAppeared) {
         let date = "";
-        date += "Season " + data.firstAppeared.season + " ";
-        if (data.firstAppeared.episode)
-            date += "Episode "+ data.firstAppeared.episode;
+        date += "Season " + firstAppeared.season + " ";
+        if (firstAppeared.episode)
+            date += "Episode "+ firstAppeared.episode;
         embed.addFields([
             {
                 name: "First Appeared",
                 value: date,
+                inline: true
+            }
+        ])
+    }
+
+    let magic = data.magic;
+    if (data.magic) {
+        let magicData = "";
+        magicData += magic.auraColor + "\n";
+        if (magic.type)
+            magicData += magic.type;
+
+        embed.addFields([
+            {
+                name: "Magic",
+                value: magicData,
                 inline: true
             }
         ])
