@@ -99,6 +99,11 @@ var Ponies: Pony[] = [
         firstAppeared: {
             season: 1,
             episode: 1
+        },
+        magic: {
+            auraColor: "FF5198",
+            type: Magic.Alicorn,
+            magicImage: "https://m.media-amazon.com/images/M/MV5BYjA5MjdmZDktZmNjNC00ZDJmLTg2ZGQtNGFhYzljNzcxNDk4XkEyXkFqcGdeQXVyODI3MTM2NDY@._V1_UY1200_CR733,0,630,1200_AL_.jpg"
         }
     },
     {
