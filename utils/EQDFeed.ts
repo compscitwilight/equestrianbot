@@ -4,6 +4,7 @@ let feed = "https://www.equestriadaily.com/feeds/posts/default";
 
 export async function getFormattedFeed() {
     let response = await axios.get(feed);
-    console.log(response);
-    return response;
+    let data = response.data;
+    console.log(typeof data);
+    return data;
 }
