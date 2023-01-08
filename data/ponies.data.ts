@@ -363,7 +363,11 @@ var Ponies: Pony[] = [
         description: "**Yona** is a female yak who is a student at Twilight's School of Friendship. She is part of the Young 6, which is a friend group of students at the school.",
         gen: Generation.G4,
         type: Species.Yak,
-        color: Colors.LuminousVividPink
+        color: Colors.LuminousVividPink,
+        firstAppeared: {
+            season: 8,
+            episode: 1
+        }
     },
     {
         name: "Derpy",
@@ -371,7 +375,11 @@ var Ponies: Pony[] = [
         description: "**Derpy** (or **Derpy Hooves**, **Ditzy Doo**, **Muffins**) is a mail pegasus. She is characterized by her strabismus, causing both of her eyes to look in opposite directions. She was formerly a background character in the Premiere, but fans discovered her quirk on 4chan. This lead to her becoming an official, but controversial character. She is one of the most iconic characters in Gen 4.",
         gen: Generation.G4,
         type: Species.Pegasus,
-        color: Colors.LightGrey
+        color: Colors.LightGrey,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Zecora",
@@ -379,7 +387,11 @@ var Ponies: Pony[] = [
         description: "**Zecora** is a zebra who brews potions using herbs from the Everfree Forest. She is a supporting character who helps find cures to certain diseases.",
         gen: Generation.G4,
         type: Species.Zebra,
-        color: Colors.White
+        color: Colors.White,
+        firstAppeared: {
+            season: 1,
+            episode: 9
+        }
     },
     {
         name: "DJ Pon-3",
@@ -395,7 +407,11 @@ var Ponies: Pony[] = [
         description: "**Octavia Melody** is a cellist Earth pony who acts as a background character. She is always seen playing a cello.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Orange
+        color: Colors.Orange,
+        firstAppeared: {
+            season: 1,
+            episode: 25
+        }
     },
     {
         name: "Gummy",
@@ -403,7 +419,11 @@ var Ponies: Pony[] = [
         description: "**Gummy** is Pinkie Pie's pet alligator.",
         gen: Generation.G4,
         type: Species.Alligator,
-        color: Colors.Green
+        color: Colors.Green,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Angel",
@@ -411,7 +431,11 @@ var Ponies: Pony[] = [
         description: "**Angel** is a Fluttershy's pet bunny. He is a sassy and demanding bunny who acts as the primary companion of Fluttershy.",
         gen: Generation.G4,
         type: Species.Bunny,
-        color: Colors.White
+        color: Colors.White,
+        firstAppeared: {
+            season: 1,
+            episode: 3
+        }
     },
     {
         name: "Bon Bom",
@@ -435,7 +459,11 @@ var Ponies: Pony[] = [
         description: "**Prince Bluebird** is a royal unicorn who is the distant nephew of Princess Celestia and Princess Luna, and the cousin of Princess Cadance.",
         gen: Generation.G4,
         type: Species.Unicorn,
-        color: Colors.Yellow
+        color: Colors.Yellow,
+        firstAppeared: {
+            season: 1,
+            episode: 25
+        }
     },
     {
         name: "Big Macintosh",
@@ -443,7 +471,11 @@ var Ponies: Pony[] = [
         description: "**Big Macintosh** is the older brother of Applejack and Applebloom. He talks in occassionally \"eeyups\" and \"eenopes\". He usually does most of the heavy lifting duties at Sweet Apple Acres.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Red
+        color: Colors.Red,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Granny Smith",
@@ -451,7 +483,11 @@ var Ponies: Pony[] = [
         description: "**Granny Smith** is an elderly Earth pony who is the grandmother of Applejack, Applebloom, and Big Mac. Her name is a play on the apple \"Granny Smith\". She is one of the founders of Ponyville, and discovered Zapp Apples.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Green
+        color: Colors.Green,
+        firstAppeared: {
+            season: 1,
+            episode: 1
+        }
     },
     {
         name: "Owlowiscious",
@@ -459,7 +495,11 @@ var Ponies: Pony[] = [
         description: "**Owlowiscious** is an owl who first appears in the episode \"Owl's Well That Ends Well\". He becomes Twilight Sparkle's pet, and makes Spike fear that he may be replaced.",
         gen: Generation.G4,
         type: Species.Owl,
-        color: Colors.DarkOrange
+        color: Colors.DarkOrange,
+        firstAppeared: {
+            season: 1,
+            episode: 24
+        }
     },
     {
         name: "Diamond Tiara",
@@ -467,7 +507,11 @@ var Ponies: Pony[] = [
         description: "**Diamond Tiara** is a school-age Earth pony who was formerly the antagonist of the **Cutie Mark Crusaders** and other fillies, alongside her friend Silver Spoon. She changed herself after discovering what her true talent was, and thus cuasing the Cutie Mark Crusaders to earn their cutie marks. Her parents are Filthy Rich and Spoiled Rich.",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.Purple
+        color: Colors.Purple,
+        firstAppeared: {
+            season: 1,
+            episode: 12
+        }
     },
     {
         name: "Silver Spoon",
@@ -475,7 +519,11 @@ var Ponies: Pony[] = [
         description: "**Silver Spoon** is a school-age Earth pony who was formerly the antagonist of the **Cutie Mark Crusaders** alongside her friend Diamond Tiara. She changed herself after Diamond Tiara told her that her opinion wasn't valuable in \"Crusaders of the Lost Mark\".",
         gen: Generation.G4,
         type: Species.Earth,
-        color: Colors.LightGrey
+        color: Colors.LightGrey,
+        firstAppeared: {
+            season: 1,
+            episode: 12
+        }
     },
     {
         name: "King Sombra",
