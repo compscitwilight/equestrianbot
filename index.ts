@@ -10,8 +10,10 @@ export let client = new Client({
 });
 
 for (const cmd of readdirSync("./commands")) {
-    let data: Command = require("./commands/" + cmd).default;
-    commands.push(data);
+    if (cmd.endsWith(".ts")) {
+        let data: Command = require("./commands/" + cmd).default;
+        commands.push(data);
+    }
 }
 
 function updateStatusCount() {
