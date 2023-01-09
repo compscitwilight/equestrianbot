@@ -2,6 +2,7 @@ import { Client, ActivityType, Interaction, REST, Routes, User, GuildMember } fr
 import { readdirSync } from "fs";
 import Command from "./Command";
 import Config from "./config.json";
+import { processListen } from "./process";
 
 let commands = new Array<Command>();
 export let client = new Client({
@@ -65,3 +66,6 @@ client.on("guildCreate", () => updateStatusCount());
 client.on("guildDelete", () => updateStatusCount());
 
 client.login(Config.token);
+(async () => {
+    processListen();
+})
