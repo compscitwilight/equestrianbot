@@ -65,8 +65,6 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 
         if (interaction.isAutocomplete()) {
             let cmd = (command as Command);
-            if (!cmd.autocomplete) return;
-    
             await cmd.autocomplete(interaction);
         }
     }
