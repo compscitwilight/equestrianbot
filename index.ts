@@ -41,7 +41,6 @@ client.on("ready", async () => {
     await rest.put(
         Routes.applicationCommands(Config.clientId),
         { body: commands.map((c: Command) => {
-            console.log(c);
             return c.data;
         }) }
     );
@@ -62,11 +61,16 @@ client.on("interactionCreate", async (interaction: Interaction) => {
         })
 
         await command.execute(interaction);
+    }
 
-        if (interaction.isAutocomplete()) {
-            let cmd = (command as Command);
-            await cmd.autocomplete(interaction);
-        }
+
+    let cmd = (command as Command);
+    if (interaction.isAutocomplete()) {
+        await cmd.autocomplete(interaction);
+    }
+
+    if (interaction.isModalSubmit()) {
+        await cmd.modalsubmit(interaction);
     }
 })
 

@@ -6,7 +6,8 @@ import {
     TextInputStyle,
     Interaction,
     TextInputBuilder,
-    StringSelectMenuBuilder
+    StringSelectMenuBuilder,
+    ModalSubmitInteraction
 } from "discord.js";
 
 export default {
@@ -14,6 +15,11 @@ export default {
         .setName("report")
         .setDescription("Report bugs or suggest changes to the developer of the bot."),
     disabled: true,
+    modalsubmit: async (interaction: ModalSubmitInteraction) => {
+        if (!interaction.isModalSubmit()) return;
+        if (interaction.customId !== "reportmodal") return;
+        console.log("submitted")
+    },
     execute: async (interaction: Interaction) => {
         if (!interaction.isChatInputCommand()) return;
 		const modal = new ModalBuilder({
