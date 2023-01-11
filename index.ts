@@ -1,4 +1,12 @@
-import { Client, ActivityType, Interaction, REST, Routes, User, GuildMember } from "discord.js";
+import {
+  Client,
+  ActivityType,
+  Interaction,
+  REST,
+  Routes,
+  User,
+  GuildMember
+} from "discord.js";
 import { readdirSync } from "fs";
 import Command from "./Command";
 import Config from "./config.json";
